@@ -1,51 +1,65 @@
-*{
-    margin:0;
-    padding:0;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body, html{
-    height:100%;
-    width:100%;
-   }
+nav {
+    height: 60px;
+    background-color: #344051;
+    color: #fff;
 
-header{
-    height:60px;
-    background-color:rgb(47 66 81);
-    color:white;
-    }
-
-    ul{
-    margin:0 15% 0 0;
-    }
-
-li{
-    display:inline-block;
-    margin:10px 0 0 0;
-    padding:10px;
 }
 
-nav{
-    text-align:right;
-    margin:0;
-    
+.logo {
+    float: left;
+    margin-left: 390px;
+    line-height: 60px;
+    font-size: 28px;
 }
 
-header p{
-    float:left;
-    margin:20px 0 0 20%;
+.menu {
+    float: left;
+    margin-left: 430px;
 }
 
-.hi{    
-    height:1000px;
-    background-image:url(/img/1/фон.png) ;
-    background-attachment:local;
-    
+.menu li {
+    float: left;
+    margin-right: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
-.paren{
-    float:right;
-    background-image:url(/img/1/Парень.png) ;
-    height:913px;
-    border:none;
-    width:817px;
+.main {
+    height: calc(100% - 60px);
+    background: url(../img/1/Парень.png) 90% 100% /auto 800px no-repeat, url(../img/1/фон.png) center/cover no-repeat;
+}
+
+.title_container {
+    float: left;
+    margin: 433px 0 0 400px;
+    text-align: center;
+}
+
+.title_container h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #2c384a;
+}
+
+.title_container h4 {
+    margin-top: 43px;
+    font-weight: bold;
+    color: #79818d;
+}
+
+.title_container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0 13px;
+    margin: 60px 14px;
 }
