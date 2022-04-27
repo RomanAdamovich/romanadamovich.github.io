@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body, html{
+    height:100%;
+    width:100%;
+   }
+
+header{
+    height:60px;
+    background-color:rgb(47 66 81);
+    color:white;
+    }
+
+    ul{
+    margin:0 15% 0 0;
+    }
+
+li{
+    display:inline-block;
+    margin:10px 0 0 0;
+    padding:10px;
+}
+
+nav{
+    text-align:right;
+    margin:0;
+    
+}
+
+header p{
+    float:left;
+    margin:20px 0 0 20%;
+}
+
+.hi{    
+    height:1000px;
+    background-image:url(/img/1/фон.png) ;
+    background-attachment:local;
+    
+}
+
+.paren{
+    float:right;
+    background-image:url(/img/1/Парень.png) ;
+    height:913px;
+    border:none;
+    width:817px;
+}
