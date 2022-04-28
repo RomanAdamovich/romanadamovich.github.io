@@ -29,6 +29,7 @@ nav {
     text-transform: uppercase;
     font-size: 16px;
 }
+
 /*---------------------------Привет--------------------------------*/
 .main {
     height: calc(100% - 60px);
@@ -63,78 +64,130 @@ nav {
     font-size: 13px;
     padding: 0 13px;
     margin: 60px 14px;
-   
+
 }
+
 /*---------------------------Обо мне--------------------------------*/
-.obo_mne{
-    
-    width:100%;
-    height:720px;
-    background: url(../img/2/фотка.png) center/ 200px 200px no-repeat, url(../img/2/Фоновый\ слой.png) center/cover ;
-    box-shadow:0 -3px 30px #6d7682;
+.obo_mne {
+    width: 100%;
+    height: 720px;
+    background: url(../img/2/фотка.png) center/ 200px 200px no-repeat, url(../img/2/Фоновый\ слой.png) center/cover;
+    box-shadow: 0 -3px 30px #6d7682;
 }
-.obo_mne hr{
-    width:75px;
-    height:3px;
-    background-color:orange;
-    margin:34px 0 0 920px;
+
+.obo_mne hr {
+    width: 75px;
+    height: 3px;
+    background-color: orange;
+    margin: 34px 0 0 920px;
 }
-.obo_mne h2{
-    font-size:26px;
+
+.obo_mne h2 {
+    font-size: 26px;
     font-weight: bold;
-    color:#344051;
-    padding:110px 0 0 894px;;
+    color: #344051;
+    padding: 110px 0 0 894px;
+    ;
     text-transform: uppercase;
 }
-.obo_mne .p{
-    width:700px;
-    margin:350px 0 0 600PX;
+
+.obo_mne .p {
+    width: 700px;
+    margin: 350px 0 0 600PX;
 }
-.obo_mne input{
-    height:35px;
+
+.obo_mne input {
+    height: 35px;
     text-align: center;
-    border:2px solid rgb(111 113 127);
-    background: url(../img/dowload.png) 10px 10px/13px 13px no-repeat;
-    color:#6d7682;
-    font-size:13px;
+    border: 2px solid rgb(111 113 127);
+    background: url(../img/2/dowload.png) 10px 10px/13px 13px no-repeat;
+    color: #6d7682;
+    font-size: 13px;
     padding: 10px 10px 10px 30px;
     border-radius: 5px;
-    margin:40px 0 0 290px;
+    margin: 40px 0 0 290px;
 }
+
 /*---------------------------Что я умею--------------------------------*/
 .chto_ya_ymeu {
-    width:100%;
-    height:523px;
+    width: 100%;
+    height: 523px;
     background: url(../img/3/картинка\ фона.png) center/ cover no-repeat;
 }
-.chto_ya_ymeu h2{
-    font-size:26px;
+
+.chto_ya_ymeu h2 {
+    font-size: 26px;
     font-weight: bold;
-    color:#344051;
-    padding:110px 0 0 874px;
+    color: #344051;
+    padding: 110px 0 0 874px;
     text-transform: uppercase;
 }
-.chto_ya_ymeu hr{
-    width:75px;
-    height:3px;
-    background-color:orange;
-    margin:34px 0 0 927px;
+
+.chto_ya_ymeu hr {
+    width: 75px;
+    height: 3px;
+    background-color: orange;
+    margin: 34px 0 0 927px;
 }
-.chto_ya_ymeu ul{
-text-align: center;
-height:172px;
-}
-.chto_ya_ymeu li{
-    display:inline-block;
-    border:1px solid red;
-    width:220px;
+
+.chto_ya_ymeu ul {
     text-align: center;
-    margin:100px 0 0 100px;
+    height: 172px;
 }
-.chto_ya_ymeu .p{
+
+.chto_ya_ymeu li {
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    margin: 100px 0 0 100px;
+    vertical-align: top;
+}
+
+.chto_ya_ymeu .p {
     color: rgb(232 126 0);
-    margin:37px 0 20px 0;
+    margin: 37px 0 20px 0;
     font-weight: bold;
     font-size: 13px;
 }
 
+/*---------------------------Кейсы--------------------------------*/
+.keisi {
+    height: 1056px;
+    background: url(../img/4/fotka.png) 0px 255px /auto no-repeat;
+}
+
+.text_keisi {
+    border: 2px solid red;
+
+}
+
+.text_keisi h2 {
+    margin-top: 100px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #344051;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.text_keisi hr {
+    width: 70px;
+    height: 3px;
+    background-color: orange;
+    margin: 30px 0 0 915px;
+}
+
+.text_keisi>p {
+    text-align: center;
+    font-size: 13px;
+    color: #344051;
+    margin-top: 36px;
+
+}
+
+.text_keisi h5 {
+    font-size: 21px;
+    text-transform: uppercase;
+    margin: 671px 0 0 390px;
+}
