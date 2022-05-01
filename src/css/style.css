@@ -69,6 +69,7 @@ nav {
 
 /*---------------------------Обо мне--------------------------------*/
 .obo_mne {
+    text-align: center;
     width: 100%;
     height: 720px;
     background: url(../img/2/фотка.png) center/ 200px 200px no-repeat, url(../img/2/Фоновый\ слой.png) center/cover;
@@ -79,8 +80,7 @@ nav {
     font-size: 26px;
     font-weight: bold;
     color: #344051;
-    padding: 110px 0 0 894px;
-    ;
+    padding-top: 110px;
     text-transform: uppercase;
 }
 
@@ -90,6 +90,7 @@ nav {
     background-color: orange;
     margin: 34px 0 0 920px;
 }
+
 .obo_mne .p {
     width: 700px;
     margin: 350px 0 0 600PX;
@@ -97,18 +98,22 @@ nav {
 
 .obo_mne input {
     height: 35px;
-    text-align: center;
+    width: 156px;
     border: 2px solid rgb(111 113 127);
-    background: url(../img/2/dowload.png) 10px 10px/13px 13px no-repeat;
+    background: none;
     color: #6d7682;
     font-size: 13px;
-    padding: 10px 10px 10px 30px;
+    font-weight: bold;
+    padding-left: 20px;
     border-radius: 5px;
-    margin: 40px 0 0 290px;
+    margin-top: 40px;
+    background: url(../img/2/dowload.png) 10px 8px/13px 13px no-repeat;
+
 }
 
 /*---------------------------Что я умею--------------------------------*/
 .chto_ya_ymeu {
+    text-align: center;
     height: 523px;
     background: url(../img/3/картинка\ фона.png) center/ cover no-repeat;
 }
@@ -118,7 +123,6 @@ nav {
     font-weight: bold;
     color: #344051;
     padding-top: 110px;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -130,19 +134,17 @@ nav {
 }
 
 .chto_ya_ymeu ul {
-    text-align: center;
     height: 172px;
 }
 
 .chto_ya_ymeu li {
     display: inline-block;
     width: 220px;
-    text-align: center;
     margin: 100px 0 0 100px;
     vertical-align: top;
 }
 
-.chto_ya_ymeu .p {
+.chto_ya_ymeu .veb {
     color: rgb(232 126 0);
     margin: 37px 0 20px 0;
     font-weight: bold;
@@ -151,16 +153,17 @@ nav {
 
 /*---------------------------Кейсы--------------------------------*/
 .keisi {
+
     height: 1056px;
-    background: url(../img/4/фотка.png) 0px 160px /auto no-repeat;
+    background: url(../img/4/fotka.png) 0px 160px /auto no-repeat;
 }
 
 .keisi h2 {
+    text-align: center;
     margin-top: 100px;
     font-size: 26px;
     font-weight: bold;
     color: #344051;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -178,101 +181,111 @@ nav {
     margin-top: 36px;
 }
 
-.keisi_knopka{
-    float:left;
-    width:284px;
-    margin:673px 0 0 392px;
+.keisi_knopka {
+    float: left;
+    width: 284px;
+    margin: 673px 0 0 392px;
 }
 
-.keisi_knopka h5{
+.keisi_knopka h5 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size:21px;
+    font-size: 21px;
 }
 
-.keisi_knopka p{
-    margin:17px 0;
+.keisi_knopka p {
+    margin: 17px 0;
 }
 
-.keisi_text{
-    width:850px;
-    margin:673px 0 0 675px;
+.keisi_text {
+    width: 850px;
+    margin: 673px 0 0 675px;
 }
 
-.keisi_text h4{
+.keisi_text h4 {
     font-size: 20px;
     font-weight: bold;
 }
 
-.keisi_text p{
+.keisi_text p {
     line-height: 27px;
-    margin-top:5px;
+    margin-top: 5px;
 }
-.keisi_knopka input{
-    width:200px;
-    height:50px;
-    color:#fff;
+
+.keisi_knopka input {
+    width: 200px;
+    height: 50px;
+    color: #fff;
     background-color: rgb(0 182 175);
     border-radius: 5px;
-    font-size:16px;
-    text-transform:uppercase;
+    font-size: 16px;
+    text-transform: uppercase;
 }
+
 /*---------------------------Расчёт стоимости--------------------------------*/
-.raschet{
-    height:950px;
+.raschet {
+    height: 950px;
 }
+
 .raschet h2 {
     margin-top: 200px;
     font-size: 26px;
     font-weight: bold;
     color: #344051;
     text-align: center;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
-.spiski{
-    width:900px;
-    height:510px;
-    margin:60px 0 0 500px;
+
+.spiski {
+    width: 900px;
+    height: 510px;
+    margin: 60px 0 0 500px;
 }
-.spiski h3{
+
+.spiski h3 {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom:25px;
+    margin-bottom: 25px;
 }
-select{
-    width:900px;
-    height:60px;
+
+select {
+    width: 900px;
+    height: 60px;
     background-color: rgb(238 238 238);
-    border-radius:2px;
-    font-size:13px;
+    border-radius: 2px;
+    font-size: 16px;
     font-weight: bold;
-    color:rgb(162 162 162);
-    margin-bottom:50px;
+    color: rgb(162 162 162);
+    margin-bottom: 50px;
 }
-.raschet select:last-of-type{
-    margin:0 0 40px 0;
+
+.raschet select:last-of-type {
+    margin: 0 0 40px 0;
 }
-.spiski hr{
-    border:1px solid rgb(210 210 210);
+
+.spiski hr {
+    border: 1px solid rgb(210 210 210);
 }
-.spiski pre{
-    font-size:20px;
+
+.spiski pre {
+    font-size: 20px;
     font-weight: bold;
 }
+
 /*---------------------------Немного стастики--------------------------------*/
-.stat{
-    
-height: 500px;
-background: url(../img/6/фон.png) center/ cover no-repeat;
+.stat {
+    text-align: center;
+    height: 500px;
+    background: url(../img/6/фон.png) center/ cover no-repeat;
 }
 
 .stat h2 {
     font-size: 26px;
     font-weight: bold;
     color: #344051;
-    padding-top:100px;
-    text-align: center;
+    padding-top: 100px;
+    /* Если делаю через margin, то смещение вниз вместе с фоном. Какой селлектор можно добавть что бы такого не было?*/
     text-transform: uppercase;
 }
 
@@ -282,96 +295,151 @@ background: url(../img/6/фон.png) center/ cover no-repeat;
     background-color: orange;
     margin: 34px 0 0 920px;
 }
-.stat ul{
 
-margin-left:300px;
+.stat li {
+    display: inline-block;
+    width: 175px;
+    margin: 90px 0 0 120px;
+    /* Как сделать что бы они равномерно распределились по ширине страницы?*/
 }
-.stat li{
-    display:inline-block;
-    width:175px;
-    margin:90px 0 0 120px;                               /* Как сделать что бы они равномерно распределились по ширине страницы?*/
-    text-align: center;
-}
-.stat .cifri{
+
+.stat .cifri {
     font-size: 30px;
-    font-weight:900;
-    margin:25px 0;
-}.stat p{
-    color:#344051;
-    font-size:13px;
+    font-weight: 900;
+    margin: 25px 0;
+}
+
+.stat p {
+    color: #344051;
+    font-size: 13px;
     text-transform: uppercase;
 }
+
 /*---------------------------Отзывы--------------------------------*/
-.otzivi{
+/* Пока не знаю как делать скроллинг страниц по горизонтали*/
+.otzivi {
     text-align: center;
-    height:600px;
+    height: 600px;
     background: url(../img/7/фотка.png) center/auto no-repeat;
 }
+
 .otzivi h2 {
     font-size: 26px;
     font-weight: bold;
     color: #344051;
-    padding-top:110px;
+    padding-top: 110px;
     text-align: center;
     text-transform: uppercase;
 }
-    
+
 .otzivi hr {
     width: 75px;
     height: 3px;
     background-color: orange;
     margin: 34px 0 0 920px;
-}   
+}
+
 .text_otzivi {
     text-align: center;
-    width:700px;
-    margin:200px 0 0 620px;
-    color:#344051;
-} 
-.text_otzivi p:last-child{
-    margin-top:40px;
-    font-size:13px;
+    width: 700px;
+    margin: 200px 0 0 620px;
+    color: #344051;
 }
+
+.text_otzivi p:last-child {
+    margin-top: 40px;
+    font-size: 13px;
+}
+
 /*---------------------------Мои контакты--------------------------------*/
-footer{
-    height:810px;
+footer {
+    height: 1255px;
     text-align: center;
-    background: url(../img/8/fon.png) center/auto no-repeat;
-    color:#fff;
+    color: #fff;
 }
-footer h2 {
+
+.polya {
+    text-align: center;
+    height: 810px;
+    background: url(../img/8/Фон.png) center/auto no-repeat;
+}
+
+.polya h2 {
     font-size: 26px;
     font-weight: bold;
     color: #344051;
-    padding-top:110px;
+    padding-top: 105px;
     text-align: center;
     text-transform: uppercase;
-    color:#fff;
+    color: #fff;
 }
-    
-footer hr {
+
+.polya hr {
     width: 75px;
     height: 3px;
     background-color: orange;
-    margin: 34px 0 0 920px;
+    margin: 34px 0 34px 920px;
 }
-footer li{
-    display:inline-block;
+
+.polya li {
+    display: inline-block;
     vertical-align: top;
-    margin:50px 100px;
-    
+    margin: 44px 50px 0 50px;
 }
-footer h3{
+
+.polya h3 {
     text-transform: uppercase;
-    margin-bottom:45px;
+    margin: 39px 0 45px 0;
     font-size: 20px;
-    
+    text-align: center;
 }
-.polya{
-    width:735px;
-    margin:0 0 100px 600px;
+
+input.name {
+    width: 350px;
+    height: 35px;
+    margin-right: 33px;
 }
-.polya input{
-    width:350px;
-    height:35px
+
+input.email {
+    width: 350px;
+    height: 35px;
+}
+
+.polya textarea {
+    width: 733px;
+    height: 95px;
+    margin: 17px 0 30px 0;
+}
+
+input.knopka {
+    width: 120px;
+    height: 50px;
+    border: 2px solid #f9faff;
+    background: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*-------Эмблемы социальных сетей почему-то идут вместе с фоном. Как попасть по контуру при наложении поверх? только с помощью margin?----*/
+.ss {
+    margin: 67px 0 0 743px
+}
+
+.ss img {
+    margin-right: 53px;
+    float: left;
+}
+
+/*---------------------------Карта--------------------------------*/
+.map {
+    height: 350px;
+    background: url(../img/9/Карта\ копия.png) center/auto no-repeat;
+    /*----Как я понял будем проходить дальше---*/
+}
+
+.dno {
+    height: 60px;
+    background-color: #344051;
+    line-height: 60px;
 }
