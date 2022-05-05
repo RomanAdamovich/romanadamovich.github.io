@@ -19,30 +19,31 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li><a href="#"> Обо мне</a></li>
+                    <li><a href="#"> Услуги</a></li>
+                    <li><a href="#"> Кейсы</a></li>
+                    <li><a href="#"> Прайс</a></li>
+                    <li><a href="#"> Отзывы</a></li>
+                    <li><a href="#"> Контакты</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <!----------------------------Привет----------------------------------->
-    <div class="main">
-        <div class="title_container">
+  <main>
+    <section class="glav">
+        <article class="title_container">
             <h1>Привет<br>Я Андрей Браун</h1>
             <h4> Фулл стек веб-разработчик и Android-разработчик</h4>
             <input type="submit" name="submit" value="Обо мне">
             <input type="submit" name="submit" value="Мои работы">
-        </div>
-    </div>
+        </article>
+    </section>
     <!----------------------------Обо мне----------------------------------->
-    <div class="obo_mne">
+    <section class="obo_mne">
         <h2>Обо мне</h2>
         <hr>
-        <div class="p">
+        <article class="p">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
                 commodo
                 nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
@@ -51,10 +52,10 @@
                 commodo
                 nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
             <input type="submit" name="submit" value="Скачать резюме">
-        </div>
-    </div>
-    <!-------------------------------Что я умею-------------------------------->
-    <div class="chto_ya_ymeu">
+        </article>
+    </section>
+    <!-------------------------------Что я умею-------------------------->
+    <section class="chto_ya_ymeu">
         <h2>ЧТО Я УМЕЮ</h2>
         <hr>
         <ul>
@@ -87,23 +88,23 @@
                     pellentesque natoque etiam. </p>
             </li>
         </ul>
-    </div>
+    </section>
 
     <!---------------------------Кейсы--------------------------------->
-    <div class="keisi">
+    <section class="keisi">
         <h2>Кейсы</h2>
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Duis sed Dapibus leo
             nec ornare diamcoccodo nibh ante facilisis.</p>
-        <div class="keisi_knopka">
+        <article class="keisi_knopka">
             <h5>Client:</h5>
             <p>Какая-то компания</p>
             <h5>Website</h5>
             <p>http://www.somedomain.com</p>
             <input type="submit" name="submit" value="Visit live site">
-        </div>
-        <div class="keisi_text">
+        </article>
+        <article class="keisi_text">
             <h4>Название проекта</h4>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -112,12 +113,12 @@
                 fugiat nulla
                 pariatur.
             </p>
-        </div>
-    </div>
+        </article>
+    </section>
     <!-----------------------Расчёт стоимости-------------------------->
-    <div class="raschet">
+    <section class="raschet">
         <h2>Расчёт стоимости</h2>
-        <div class="spiski">
+        <article class="spiski">
             <h3>Тип сайта</h3>
             <select>
                 <option value="Выберите пункт">Выберите пункт...</option>
@@ -139,16 +140,16 @@
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-            <hr>
+            <hr id="hr">
             <pre>
 Сроки                                                                           0       <!-- Как сделать что бы считал не знаю-->
 
 Стоимость                                                                       0       <!-- Как сделать что бы считал не знаю-->
             </pre>
-        </div>
-    </div>
+        </article>
+    </section>
     <!-----------------------Немного статистики-------------------------->
-    <div class="stat">
+    <section class="stat">
         <h2>Немного статистики</h2>
         <hr>
         <ul>
@@ -173,20 +174,21 @@
                 <p>Наград получено</p>
             </li>
         </ul>
-    </div>
+    </section>
     <!-----------------------Отзывы-------------------------->
-    <div class="otzivi">
+    <section class="otzivi">
         <h2>Отзывы</h2>
         <hr>
-        <div class="text_otzivi">
+        <article class="text_otzivi">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
                 commodo
                 nibh
                 ante
                 facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
             <p><b>Михаил,</b>Ген директор ПАО "Газпром".</p>
-        </div>
-    </div>
+        </article>
+    </section>
+</main>
     <!-----------------------Мои контакты-------------------------->
     <footer>
         <div class="polya">
@@ -227,7 +229,7 @@
                 <img src="img/8/ин.png" alt="ин">
             </div>
         </div>
-        <div class="map"></div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132030.0587435228!2d-71.57383580430823!3d43.01028962201321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8a9946e0d%3A0x590e6c13b1743f65!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1651653292557!5m2!1sru!2sby" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="dno">
             <p>Copyright © 2021 Андрей Браун. Design by Web</p>
         </div>
