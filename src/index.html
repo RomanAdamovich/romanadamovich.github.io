@@ -11,6 +11,27 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
     <!---------------------------header------------------------------------>
     <header>
         <nav>
@@ -30,165 +51,172 @@
         </nav>
     </header>
     <!----------------------------Привет----------------------------------->
-  <main>
-    <section class="glav">
-        <article class="title_container">
-            <h1>Привет<br>Я Андрей Браун</h1>
-            <h4> Фулл стек веб-разработчик и Android-разработчик</h4>
-            <input type="button" name="submit" value="Обо мне">
-            <input type="button" name="submit" value="Мои работы">
-        </article>
-    </section>
-    <!----------------------------Обо мне----------------------------------->
-    <section class="obo_mne">
-        <h2>Обо мне</h2>
-        <hr>
-        <article class="text_obo_mne">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
-                commodo
-                nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-            <br>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
-                commodo
-                nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-            <input type="button" value="Скачать резюме">
-        </article>
-    </section>
-    <!-------------------------------Что я умею-------------------------->
-    <section class="chto_ya_ymeu">
-        <h2><span class="chto">ЧТО</span> <span class="i">Я</span> <span class="skill">УМЕЮ</span></h2>
-        <hr>
-        <ul>
-            <li>
-                <img src="img/3/nout.png" alt="nout">
-                <p class="veb">Веб-дизайн</p><br>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </p>
-            </li>
-            <li>
-                <img src="img/3/znak.png" alt="znak">
-                <p class="veb">Веб-дизайн</p><br>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis mi in tempus eleifend
-                    pellentesque. </p>
-            </li>
-            <li>
-                <img src="img/3/raketa.png" alt="raceta">
-                <p class="veb">Веб-дизайн</p><br>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </p>
-            </li>
-            <li>
-                <img src="img/3/gramof.png" alt="gramof">
-                <p class="veb">Веб-дизайн</p><br>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </p>
-            </li>
-        </ul>
-    </section>
+    <main>
+        <section class="glav">
+            <article class="title_container">
+                <h1>Привет<br>Я Андрей Браун</h1>
+                <h4> Фулл стек веб-разработчик и Android-разработчик</h4>
+                <input type="button" name="submit" value="Обо мне">
+                <input type="button" name="submit" value="Мои работы">
+            </article>
+        </section>
+        <!----------------------------Обо мне----------------------------------->
+        <section class="obo_mne">
+            <h2>Обо мне</h2>
+            <hr>
+            <img src="../src/img/2/фотка.png" alt="фото парня">
+            <article class="text_obo_mne">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                    commodo
+                    nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                </p>
+                <br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                    commodo
+                    nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                </p>
+                <input type="button" value="Скачать резюме">
+            </article>
+        </section>
+        <!-------------------------------Что я умею-------------------------->
+        <section class="chto_ya_ymeu">
+            <h2><span class="chto">ЧТО</span> <span class="i">Я</span> <span class="skill">УМЕЮ</span></h2>
+            <hr>
+            <ul>
+                <li>
+                    <img src="img/3/nout.png" alt="nout">
+                    <p class="veb">Веб-дизайн</p><br>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </p>
+                </li>
+                <li>
+                    <img src="img/3/znak.png" alt="znak">
+                    <p class="veb">Веб-дизайн</p><br>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis mi in tempus eleifend
+                        pellentesque. </p>
+                </li>
+                <li>
+                    <img src="img/3/raketa.png" alt="raceta">
+                    <p class="veb">Веб-дизайн</p><br>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </p>
+                </li>
+                <li>
+                    <img src="img/3/gramof.png" alt="gramof">
+                    <p class="veb">Веб-дизайн</p><br>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </p>
+                </li>
+            </ul>
+        </section>
 
-    <!---------------------------Кейсы--------------------------------->
-    <section class="keisi">
-        <h2>Кейсы</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Duis sed Dapibus leo
-            nec ornare diamcoccodo nibh ante facilisis.</p>
-        <article class="keisi_knopka">
-            <h5>Client:</h5>
-            <p>Какая-то компания</p>
-            <h5>Website</h5>
-            <p>http://www.somedomain.com</p>
-            <input type="submit" name="submit" value="Visit live site">
-        </article>
-        <article class="keisi_text">
-            <h4>Название проекта</h4>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla
-                pariatur.
-            </p>
-        </article>
-    </section>
-    <!-----------------------Расчёт стоимости-------------------------->
-    <section class="raschet">
-        <h2>Расчёт стоимости</h2>
-        <article class="spiski">
-            <h3>Тип сайта</h3>
-            <select>
-                <option value="Выберите пункт">Выберите пункт...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <h3>Дизайн</h3>
-            <select>
-                <option value="Выберите пункт">Выберите пункт...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <h3>Адаптивность</h3>
-            <select>
-                <option value="Выберите пункт">Выберите пункт...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <hr id="hr">
-            <pre>
+        <!---------------------------Кейсы--------------------------------->
+        <section class="keisi">
+            <h2>Кейсы</h2>
+            <div>
+                <hr class="exid1">
+                <hr class="exid2">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Duis sed Dapibus leo
+                nec ornare diamcoccodo nibh ante facilisis.</p>
+            <img src="../src/img/4/fotka.png">
+            <article class="keisi_knopka">
+                <h5>Client:</h5>
+                <p>Какая-то компания</p>
+                <h5>Website</h5>
+                <p>http://www.somedomain.com</p>
+                <input type="submit" name="submit" value="Visit live site">
+            </article>
+            <article class="keisi_text">
+                <h4>Название проекта</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla
+                    pariatur.
+                </p>
+            </article>
+        </section>
+        <!-----------------------Расчёт стоимости-------------------------->
+        <section class="raschet">
+            <h2>Расчёт стоимости</h2>
+            <article class="spiski">
+                <h3>Тип сайта</h3>
+                <select>
+                    <option value="Выберите пункт">Выберите пункт...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <h3>Дизайн</h3>
+                <select>
+                    <option value="Выберите пункт">Выберите пункт...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <h3>Адаптивность</h3>
+                <select>
+                    <option value="Выберите пункт">Выберите пункт...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <hr id="hr">
+                <pre>
 Сроки                                                                           0       <!-- Как сделать что бы считал не знаю-->
 
 Стоимость                                                                       0       <!-- Как сделать что бы считал не знаю-->
             </pre>
-        </article>
-    </section>
-    <!-----------------------Немного статистики-------------------------->
-    <section class="stat">
-        <h2>Немного статистики</h2>
-        <hr>
-        <ul>
-            <li>
-                <img src="img/6/смайл.png" alt="смайл">
-                <p class="cifri">120</p><br>
-                <p>Счастдивых клиентов</p>
-            </li>
-            <li>
-                <img src="img/6/скобки.png" alt="скобки">
-                <p class="cifri">4600</p><br>
-                <p>Часов работы </p>
-            </li>
-            <li>
-                <img src="img/6/галочка.png" alt="галочка">
-                <p class="cifri">340</p><br>
-                <p>Проектов завершено</p>
-            </li>
-            <li>
-                <img src="img/6/кубок.png" alt="кубок">
-                <p class="cifri">23</p><br>
-                <p>Наград получено</p>
-            </li>
-        </ul>
-    </section>
-    <!-----------------------Отзывы-------------------------->
-    <section class="otzivi">
-        <h2>Отзывы</h2>
-        <hr>
-        <article class="text_otzivi">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
-                commodo
-                nibh
-                ante
-                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-            <p><b>Михаил,</b>Ген директор ПАО "Газпром".</p>
-        </article>
-    </section>
-</main>
+            </article>
+        </section>
+        <!-----------------------Немного статистики-------------------------->
+        <section class="stat">
+            <h2>Немного статистики</h2>
+            <hr>
+            <ul>
+                <li>
+                    <img src="img/6/смайл.png" alt="смайл">
+                    <p class="cifri">120</p><br>
+                    <p>Счастдивых клиентов</p>
+                </li>
+                <li>
+                    <img src="img/6/скобки.png" alt="скобки">
+                    <p class="cifri">4600</p><br>
+                    <p>Часов работы </p>
+                </li>
+                <li>
+                    <img src="img/6/галочка.png" alt="галочка">
+                    <p class="cifri">340</p><br>
+                    <p>Проектов завершено</p>
+                </li>
+                <li>
+                    <img src="img/6/кубок.png" alt="кубок">
+                    <p class="cifri">23</p><br>
+                    <p>Наград получено</p>
+                </li>
+            </ul>
+        </section>
+        <!-----------------------Отзывы-------------------------->
+        <section class="otzivi">
+            <h2>Отзывы</h2>
+            <hr>
+            <article class="text_otzivi">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                    commodo
+                    nibh
+                    ante
+                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                <p><b>Михаил,</b>Ген директор ПАО "Газпром".</p>
+            </article>
+        </section>
+    </main>
     <!-----------------------Мои контакты-------------------------->
     <footer>
         <div class="polya">
@@ -221,15 +249,18 @@
             <input class="knopka" type="submit" name="submit" value="Отправить">
 
             <div class="ss">
-                <img src="img/8/фб.png" alt="фб">
-                <img src="img/8/твитер.png" alt="твитер">
-                <img src="img/8/мяч.png" alt="мяч">
-                <img src="img/8/киса.png" alt="киса">
-                <img src="img/8/инст.png" alt="инст">
-                <img src="img/8/ин.png" alt="ин">
+                <a href=""> <img src="img/8/фб.png" alt="фб"> </a>
+                <a href=""> <img src="img/8/твитер.png" alt="твитер"></a>
+                <a href=""> <img src="img/8/мяч.png" alt="мяч"> </a>
+                <a href=""> <img src="img/8/киса.png" alt="киса"> </a>
+                <a href=""> <img src="img/8/инст.png" alt="инст"> </a>
+                <a href=""> <img src="img/8/ин.png" alt="ин"> </a>
             </div>
         </div>
-        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132030.0587435228!2d-71.57383580430823!3d43.01028962201321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8a9946e0d%3A0x590e6c13b1743f65!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1651653292557!5m2!1sru!2sby" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132030.0587435228!2d-71.57383580430823!3d43.01028962201321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8a9946e0d%3A0x590e6c13b1743f65!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1651653292557!5m2!1sru!2sby"
+                width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="dno">
             <p>Copyright © 2021 Андрей Браун. Design by Web</p>
         </div>
