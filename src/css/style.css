@@ -34,6 +34,7 @@ nav {
     font-size: 16px;
     animation: li ease 0.4s forwards;
     opacity: 0;
+    color: #fff;
 }
 
 .menu li:nth-child(2) {
@@ -792,13 +793,13 @@ footer {
     text-align: center;
 }
 
-input.name {
+footer input.name {
     width: 350px;
     height: 35px;
     margin-right: 33px;
 }
 
-input.email {
+footer input.email {
     width: 350px;
     height: 35px;
 }
@@ -809,7 +810,7 @@ input.email {
     margin: 17px 0 30px 0;
 }
 
-input.knopka {
+footer input.knopka {
     width: 120px;
     height: 50px;
     border: 2px solid #f9faff;
@@ -819,7 +820,16 @@ input.knopka {
     font-weight: bold;
 }
 
-.ss {
+footer input.knopka:hover {
+    background-image: linear-gradient(rgb(44, 62, 81) 0%, black 100%);
+}
+
+footer input.knopka:active {
+    transform: scale(1.1);
+}
+
+
+footer .ss {
     margin: 67px 0 0 743px
 }
 
@@ -837,8 +847,7 @@ input.knopka {
 }
 
 
-
-
+/*--------------------Loader---------------*/
 
 .preloader {
     /*фиксированное позиционирование*/
