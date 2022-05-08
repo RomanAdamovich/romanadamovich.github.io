@@ -18,7 +18,6 @@ nav {
     line-height: 60px;
     font-size: 28px;
     animation: comming 2s ease;
-
 }
 
 .menu {
@@ -100,7 +99,6 @@ nav {
 /*---------------------------Привет--------------------------------*/
 .glav {
     height: 950px;
-
     background: url(../img/1/Парень.png) 90% 100% /auto 800px no-repeat, url(../img/1/фон.png) center/cover no-repeat;
 }
 
@@ -117,7 +115,6 @@ nav {
     font-size: 60px;
     font-weight: bold;
     color: #2c384a;
-
 }
 
 .title_container h4 {
@@ -165,7 +162,6 @@ nav {
     text-align: center;
     width: 100%;
     height: 720px;
-
     box-shadow: 0 -3px 30px #6d7682;
     position: relative;
 }
@@ -179,6 +175,18 @@ nav {
     animation: obo_mne 0.8s 1.5s ease backwards;
 }
 
+@keyframes obo_mne {
+    from {
+        padding-top: 0;
+        opacity: 0;
+    }
+
+    to {
+        padding-top: 110px;
+        opacity: 1;
+    }
+}
+
 .obo_mne hr {
     float: right;
     width: 70px;
@@ -187,10 +195,10 @@ nav {
     position: absolute;
     top: 160px;
     left: 915px;
-    animation: hr1 1s ease 2 alternate forwards;
+    animation: hr 1s ease 2 alternate forwards;
 }
 
-@keyframes hr1 {
+@keyframes hr {
     from {
         transform: scaleX(1);
     }
@@ -219,7 +227,6 @@ nav {
 
 .text_obo_mne {
     width: 700px;
-
     position: absolute;
     left: 600px;
     top: 500px;
@@ -263,19 +270,6 @@ nav {
         opacity: 1;
     }
 }
-
-@keyframes obo_mne {
-    from {
-        padding-top: 0;
-        opacity: 0;
-    }
-
-    to {
-        padding-top: 110px;
-        opacity: 1;
-    }
-}
-
 
 /*---------------------------Что я умею--------------------------------*/
 .chto_ya_ymeu {
@@ -359,15 +353,12 @@ nav {
     }
 }
 
-
 .chto_ya_ymeu .veb {
     color: rgb(232 126 0);
     margin: 37px 0 20px 0;
     font-weight: bold;
     font-size: 13px;
 }
-
-
 
 .chto_ya_ymeu hr {
     height: 3px;
@@ -384,16 +375,12 @@ nav {
         width: 70px;
     }
 
-
-
     50% {
 
         top: 160px;
         opacity: 0.5;
         width: 150px;
     }
-
-
 
     100% {
         left: 930px;
@@ -419,7 +406,6 @@ nav {
 }
 
 hr.exid1 {
-
     width: 35px;
     height: 3px;
     background-color: orange;
@@ -434,24 +420,6 @@ hr.exid1 {
         opacity: 0;
     }
 
-    /*30% {
-
-        opacity: 0.4;
-        left: 230px;
-    }
-
-    50% {
-
-        opacity: 0.6;
-        left: 460px;
-    }
-
-    70% {
-
-        opacity: 0.8;
-        left: 690px;
-    }*/
-
     100% {
 
         opacity: 1;
@@ -460,7 +428,6 @@ hr.exid1 {
 }
 
 hr.exid2 {
-
     width: 35px;
     height: 3px;
     background-color: orange;
@@ -474,24 +441,6 @@ hr.exid2 {
         left: 1920px;
         opacity: 0;
     }
-
-    /*30% {
-
-        opacity: 0.4;
-        left: 1690px;
-    }
-
-    50% {
-
-        opacity: 0.6;
-        left: 1460px;
-    }
-
-    70% {
-
-        opacity: 0.8;
-        left: 1230px;
-    }*/
 
     100% {
 
@@ -511,7 +460,6 @@ hr.exid2 {
     position: absolute;
     top: 100px;
     animation: list 0.5s ease 4 alternate;
-
 }
 
 @keyframes list {
@@ -524,7 +472,6 @@ hr.exid2 {
     }
 }
 
-
 .keisi_knopka {
     float: left;
     width: 284px;
@@ -532,7 +479,6 @@ hr.exid2 {
     top: 700px;
     left: 390px;
 }
-
 
 .keisi_knopka h5 {
     text-transform: uppercase;
@@ -641,7 +587,6 @@ select {
     height: 500px;
     background: url(../img/6/фон.png) center/cover no-repeat;
     background-attachment: fixed;
-
 }
 
 .stat h2 {
@@ -686,13 +631,11 @@ select {
     0% {
         opacity: 0;
         transform: scale(0.5);
-
     }
 
     50% {
         opacity: 0.5;
         transform: scale(2);
-
     }
 
     100% {
@@ -828,7 +771,6 @@ footer input.knopka:active {
     transform: scale(1.1);
 }
 
-
 footer .ss {
     margin: 67px 0 0 743px
 }
@@ -850,25 +792,22 @@ footer .ss {
 /*--------------------Loader---------------*/
 
 .preloader {
-    /*фиксированное позиционирование*/
     position: fixed;
-    /* координаты положения */
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    /* фоновый цвет элемента */
     background: #e2d9d9;
-    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
     z-index: 2;
 }
 
 .preloader__row {
-
     position: relative;
     top: 50%;
     left: 50%;
     border-radius: 100%;
+    margin-top: -35px;
+    margin-left: -35px;
     width: 105px;
     height: 105px;
     text-align: center;
@@ -878,8 +817,6 @@ footer .ss {
 
 .preloader__item {
     position: absolute;
-
-
     background-color: #337ab7;
     border-radius: 100%;
     width: 20px;
@@ -887,6 +824,19 @@ footer .ss {
     animation: preloader-bounce 1.5s 1.6s infinite ease-in-out backwards;
 }
 
+@keyframes preloader-bounce {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
 
 .preloader__item:nth-child(2) {
     top: -15px;
@@ -906,13 +856,11 @@ footer .ss {
     animation-delay: 1s;
 }
 
-
 .preloader__item:nth-child(5) {
     bottom: 0;
     right: 0;
     animation-delay: 0.8s;
 }
-
 
 .preloader__item:nth-child(6) {
     bottom: -15px;
@@ -920,13 +868,11 @@ footer .ss {
     animation-delay: 0.6s;
 }
 
-
 .preloader__item:nth-child(7) {
     left: 0;
     bottom: 0;
     animation-delay: 0.4s;
 }
-
 
 .preloader__item:nth-child(8) {
     left: -15px;
@@ -934,29 +880,12 @@ footer .ss {
     animation-delay: 0.2s;
 }
 
-
-
 @keyframes preloader-rotate {
     100% {
         transform: rotate(360deg);
     }
 }
 
-
-@keyframes preloader-bounce {
-
-    0% {
-        transform: scale(0);
-    }
-
-    50% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(0);
-    }
-}
 
 .loaded_hiding .preloader {
     transition: 2s opacity;
