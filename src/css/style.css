@@ -1,40 +1,58 @@
-/*---------------------------Header--------------------------------*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic';
 }
+
+p {
+    font-family: 'Calibri';
+}
+/*---------------------------Header--------------------------------*/
+
 
 nav {
     height: 60px;
     width: 100%;
     background-color: #344051;
-    
     position: fixed;
     z-index: 1;
 }
 
 .logo {
-    float: left;
-    margin-left: 390px;
-    line-height: 60px;
-    font-size: 28px;
-    animation: comming 2s ease;
     color: #fff;
-}
-
-.menu {
-    float: left;
-    margin-left: 430px;
-}
-
-.menu li {
-    float: left;
-    margin-right: 40px;
+    font-size: 30px;
     line-height: 60px;
+    float: left;
+    animation: comming 2s ease;
+}
+
+@keyframes comming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity:1;
+    }
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    float:left;
+}
+
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 14px;
     text-transform: uppercase;
-    font-size: 16px;
+    
     animation: li ease 0.4s forwards;
     opacity: 0;
-    }
+}
 
 .menu li:nth-child(2) {
     animation-delay: 0.4s;
@@ -58,9 +76,10 @@ nav {
 
 .menu li a {
     transition: all 0.1s;
-    display: inline-block;
-    transform: scale(1);
     color: #fff;
+    transform: scale(1);
+    display: inline-block;
+    text-decoration: none;
 }
 
 .menu li a:active {
@@ -75,15 +94,7 @@ nav {
     color: orange;
 }
 
-@keyframes comming {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        margin-top: 1;
-    }
-}
 
 @keyframes li {
     from {
@@ -98,9 +109,13 @@ nav {
 }
 
 /*--------------------------Привет--------------------------------*/
+main{
+    width: 100%;
+    height:100%;
+}
 .glav {
-    height: 950px;
-    background: url(../img/1/Парень.png) 90% 100% /auto 800px no-repeat, url(../img/1/фон.png) center/cover no-repeat;
+    height:94%;
+    background: url(../img/1/Парень.png) 90% 100% /43% 90% no-repeat, url(../img/1/фон.png) center/cover no-repeat;
 }
 
 .title_container {
@@ -165,6 +180,7 @@ nav {
     height: 720px;
     box-shadow: 0 -3px 30px #6d7682;
     position: relative;
+    border: 1px solid red;
 }
 
 .obo_mne h2 {
@@ -227,10 +243,12 @@ nav {
 }
 
 .text_obo_mne {
+    
     width: 700px;
     position: absolute;
     left: 600px;
     top: 500px;
+    
 }
 
 .obo_mne input {
@@ -259,6 +277,9 @@ nav {
 }
 
 .text_obo_mne p {
+    font-family: 'Calibri';
+    font-famil: 'Franklin Gothic';
+    font-size: 18px;
     animation: one 5s 2.5s ease backwards;
 }
 
@@ -357,8 +378,8 @@ nav {
 .chto_ya_ymeu .veb {
     color: rgb(232 126 0);
     margin: 37px 0 20px 0;
-    font-weight: bold;
-    font-size: 13px;
+    font-weight:bold;
+    font-size: 19px;
 }
 
 .chto_ya_ymeu hr {
@@ -789,9 +810,11 @@ footer .ss {
     background-color: #344051;
     line-height: 60px;
 }
+.dno p{
+    font-family:Arial;
+}
 
-
-/*--------------------Loader---------------*/
+/*--------------------Loader---------------
 
 .preloader {
     position: fixed;
@@ -896,4 +919,4 @@ footer .ss {
 
 .loaded .preloader {
     display: none;
-}
+}*/
