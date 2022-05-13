@@ -9,7 +9,7 @@ p {
 
 
 nav {
-    height: 60px;
+    height: 6%;
     width: 100%;
     background-color: #344051;
     position: fixed;
@@ -81,6 +81,9 @@ main{
     display: inline-block;
     text-decoration: none;
 }
+.dropdown-menu li a{
+    text-decoration: none;
+}
 
 .menu li a:active {
     transform: scale(1.1);
@@ -107,6 +110,9 @@ main{
         margin-top: 0;
     }
 }
+.white-btn:visited{
+    color:#fff;
+}
 
 /*--------------------------Привет--------------------------------*/
 main{
@@ -115,20 +121,22 @@ main{
 }
 .glav {
     height:94%;
-    background: url(../img/1/Парень.png) 90% 100% /43% 90% no-repeat, url(../img/1/фон.png) center/cover no-repeat;
+    background: url(../img/1/Парень.png) 90% 100% /auto 90% no-repeat, url(../img/1/фон.png) center/cover no-repeat;
 }
 
 .title_container {
+    margin-top: 100px;
     float: left;
-    margin: 433px 0 0 400px;
+    width:100%;
     text-align: center;
-    animation: title 2s ease forwards;
+    nimation: title 2s ease forwards;
     animation-delay: 2.4s;
-    opacity: 0;
+    opacity: 1;
 }
 
 .title_container h1 {
-    font-size: 60px;
+
+    font-size: 72px;
     font-weight: bold;
     color: #2c384a;
 }
@@ -172,7 +180,11 @@ main{
         margin-left: 400px;
     }
 }
-
+@media (max-width:991px) {
+    .title_container h1,.title_container h4{
+color: white;
+}
+}
 /*---------------------------Обо мне--------------------------------*/
 .obo_mne {
     text-align: center;
