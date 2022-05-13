@@ -3,14 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <title>first site</title>
 </head>
 
 <body>
+    <!--
     <div class="preloader">
         <div class="preloader__row">
             <div class="preloader__item"></div>
@@ -31,22 +35,41 @@
                 document.body.classList.remove('loaded_hiding');
             }, 500);
         }
-    </script>
+    </script>-->
     <!---------------------------header------------------------------------>
     <header>
         <nav>
-            <div class="logo">
-                <p>Андрей Браун</p>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#"> Обо мне</a></li>
-                    <li><a href="#"> Услуги</a></li>
-                    <li><a href="#"> Кейсы</a></li>
-                    <li><a href="#"> Прайс</a></li>
-                    <li><a href="#"> Отзывы</a></li>
-                    <li><a href="#"> Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"> 
+                        <div class="logo">
+                            <p>Андрей Браун</p>
+                        </div>
+                    </div>
+                    <div class="col-6 offset-4">
+                        <div class="menu">
+                             <ul>
+                             <li><a href="#"> Обо мне</a></li>
+                             <li><a href="#"> Услуги</a></li>
+                             <li><a href="#"> Кейсы</a></li>
+                             <li><a href="#"> Прайс</a></li>
+                             <li><a href="#"> Отзывы</a></li>
+                             <li><a href="#"> Контакты</a></li>
+                            </ul>
+                         </div>          
+                     </div>
+                     <div class="col-2"><div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ссылка выпадающего списка
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Действие</a></li>
+                          <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                          <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        </ul>
+                      </div></div>
+                </div>
             </div>
         </nav>
     </header>
@@ -64,7 +87,7 @@
         <section class="obo_mne">
             <h2>Обо мне</h2>
             <hr>
-            <img src="../src/img/2/фотка.png" alt="фото парня">
+            <img src="img/2/фотка.png" alt="фото парня">
             <article class="text_obo_mne">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
                     commodo
@@ -92,21 +115,21 @@
                 </li>
                 <li>
                     <img src="img/3/znak.png" alt="znak">
-                    <p class="veb">Веб-дизайн</p><br>
+                    <p class="veb">Разработка</p><br>
                     <p>Lorem ipsum dolor sit amet placerat
                         facilisis mi in tempus eleifend
                         pellentesque. </p>
                 </li>
                 <li>
                     <img src="img/3/raketa.png" alt="raceta">
-                    <p class="veb">Веб-дизайн</p><br>
+                    <p class="veb">CEO-Оптимизация</p><br>
                     <p>Lorem ipsum dolor sit amet placerat
                         facilisis felis mi in tempus eleifend
                         pellentesque natoque etiam. </p>
                 </li>
                 <li>
                     <img src="img/3/gramof.png" alt="gramof">
-                    <p class="veb">Веб-дизайн</p><br>
+                    <p class="veb">Маркетинг</p><br>
                     <p>Lorem ipsum dolor sit amet placerat
                         facilisis felis mi in tempus eleifend
                         pellentesque natoque etiam. </p>
@@ -124,7 +147,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Duis sed Dapibus leo
                 nec ornare diamcoccodo nibh ante facilisis.</p>
-            <img src="../src/img/4/fotka.png">
+            <img src="img/4/fotka.png">
             <article class="keisi_knopka">
                 <h5>Client:</h5>
                 <p>Какая-то компания</p>
@@ -265,6 +288,7 @@
             <p>Copyright © 2021 Андрей Браун. Design by Web</p>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
