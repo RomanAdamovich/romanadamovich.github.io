@@ -121,6 +121,7 @@ main{
 }
 .glav {
     height:94%;
+    background-color: #344051;
     background: url(../img/1/Парень.png) 90% 100% /auto 90% no-repeat, url(../img/1/фон.png) center/cover no-repeat;
 }
 
@@ -129,9 +130,8 @@ main{
     float: left;
     width:100%;
     text-align: center;
-    nimation: title 2s ease forwards;
-    animation-delay: 2.4s;
-    opacity: 1;
+    animation: title 2s 2.4s ease forwards;
+    opacity: 0;
 }
 
 .title_container h1 {
@@ -162,6 +162,7 @@ main{
 
 .title_container input:active {
     transform: scale(1.1);
+    
 }
 
 .title_container input:hover {
@@ -177,12 +178,36 @@ main{
 
     to {
         opacity: 1;
-        margin-left: 400px;
     }
 }
 @media (max-width:991px) {
-    .title_container h1,.title_container h4{
-color: white;
+    .title_container h1,.title_container h4,.title_container input{
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.title_container input{
+    border: 2px solid #fff;
+}
+
+.title_container{
+animation: title 2s  ease forwards;
+}
+
+.glav{
+    position: relative;
+}
+    
+.glav:after{ 
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
 }
 }
 /*---------------------------Обо мне--------------------------------*/
