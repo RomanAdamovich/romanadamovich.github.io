@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>first site</title>
 </head>
 
 <body>
-    <!--
+    <!---------------------------loader----------------------------------
     <div class="preloader">
         <div class="preloader__row">
             <div class="preloader__item"></div>
@@ -41,10 +41,11 @@
     <header>
         <nav>
             <div class="container">
-                <div class="row h-60px">
+                <div class="row">
                     <div class="col-xxl-2 col-xl-3 col-lg-3 col-7"> 
                         <div class="logo"><p>Андрей Браун</p></div></div>
-                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
                              <ul>
                              <li><a href="#"> Обо мне</a></li>
                              <li><a href="#"> Услуги</a></li>
@@ -55,18 +56,21 @@
                             </ul>
                          </div>          
                      </div>
-                     <div class="col-5 d-flex d-lg-none flex-column  align-items-end">
-                     <div class="dropdown">
-                        <a class="btn btn-outline-secondary dropdown-toggle mt-3 white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">МЕНЮ</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#"> Обо мне</a></li>
-                            <li><a class="dropdown-item" href="#"> Услуги</a></li>
-                            <li><a class="dropdown-item" href="#"> Кейсы</a></li>
-                            <li><a class="dropdown-item" href="#"> Прайс</a></li>
-                            <li><a class="dropdown-item" href="#"> Отзывы</a></li>
-                            <li><a class="dropdown-item" href="#"> Контакты</a></li>
-                        </ul>
-                    </div>
+                     <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              МЕНЮ
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item"  href="#"> Обо мне</a></li>
+                              <li><a class="dropdown-item"  href="#"> Услуги</a></li>
+                              <li><a class="dropdown-item"  href="#"> Кейсы</a></li>
+                              <li><a class="dropdown-item"  href="#"> Прайс</a></li>
+                              <li><a class="dropdown-item"  href="#"> Отзывы</a></li>
+                              <li><a class="dropdown-item"  href="#"> Контакты</a></li>
+                            </ul>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +79,9 @@
     <!----------------------------Привет----------------------------------->
     <main>
         <section class="glav">
-            <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6 ">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 ">
                 <article class="title_container">
                 <h1>Привет<br>Я Андрей Браун</h1>
                 <h4> Фулл стек веб-разработчик и Android-разработчик</h4>
@@ -87,69 +93,89 @@
         </section>
         <!----------------------------Обо мне----------------------------------->
         <section class="obo_mne">
-            <h2>Обо мне</h2>
-            <hr>
-            <img src="img/2/фотка.png" alt="фото парня">
-            <article class="text_obo_mne">
+            <div class="container h-100">
+            <div class="row  justify-content-center">
+                <div class="col-6  col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-5 "><h2><span>Обо мне</span></h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6  col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-5"><hr></div>
+            </div>
+            <div class="row  justify-content-center"><div class="col-6  col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-5"><img src="img/2/фотка.png" alt="фото парня"></div>
+            </div>
+            <div class="row justify-content-center align-items-end "><div class="col-12 col-xxl-8 col-xl-9 col-lg-10 col-md-12 col-sm-12 text_obo_mne">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
-                    commodo
-                    nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                commodo
+                nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
                 </p>
-                <br>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
-                    commodo
-                    nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
-                </p>
-                <input type="button" value="Скачать резюме">
-            </article>
+                commodo
+                nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                </p> 
+            </div>
+        </div>
+        <div class="row justify-content-center"><div class="col-6  col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-5"><div class="dowload">
+            <i class="fa fa-download " aria-hidden="true"></i>
+            <input  type="button" value="Скачать резюме">
+        </div></div></div>
+        
+            
+            
+             
+                
+            
+        </div>
         </section>
         <!-------------------------------Что я умею-------------------------->
         <section class="chto_ya_ymeu">
-            <h2><span class="chto">ЧТО</span> <span class="i">Я</span> <span class="skill">УМЕЮ</span></h2>
-            <hr>
-            <ul>
+            <div class="container"><div class="row justify-content-center"><div class="col-6  col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 "><h2><span class="chto">ЧТО</span> <span class="i">Я</span> <span class="skill">УМЕЮ</span></h2></div></div>
+            <div class="row justify-content-center"><div class="col-6  col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5"><hr></div></div>
+            <div class="row">
+                <ul class="col-12">
                 <li>
-                    <img src="img/3/nout.png" alt="nout">
-                    <p class="veb">Веб-дизайн</p><br>
+                    <i class="fa fa-laptop znak" aria-hidden="true"></i>
+                    <p class="veb">Веб-дизайн</p>
                     <p>Lorem ipsum dolor sit amet placerat
                         facilisis felis mi in tempus eleifend
                         pellentesque natoque etiam. </p>
                 </li>
                 <li>
-                    <img src="img/3/znak.png" alt="znak">
-                    <p class="veb">Разработка</p><br>
+                    <i class="fa fa-code znak" aria-hidden="true"></i>
+                    <p class="veb">Веб-дизайн</p>
                     <p>Lorem ipsum dolor sit amet placerat
                         facilisis mi in tempus eleifend
                         pellentesque. </p>
                 </li>
                 <li>
-                    <img src="img/3/raketa.png" alt="raceta">
-                    <p class="veb">CEO-Оптимизация</p><br>
+                    <i class="fa fa-rocket znak" aria-hidden="true"></i>
+                    <p class="veb">Веб-дизайн</p>
                     <p>Lorem ipsum dolor sit amet placerat
                         facilisis felis mi in tempus eleifend
                         pellentesque natoque etiam. </p>
                 </li>
                 <li>
-                    <img src="img/3/gramof.png" alt="gramof">
-                    <p class="veb">Маркетинг</p><br>
+                    <i class="fa fa-bullhorn znak" aria-hidden="true"></i>
+                    <p class="veb">Веб-дизайн</p>
                     <p>Lorem ipsum dolor sit amet placerat
                         facilisis felis mi in tempus eleifend
                         pellentesque natoque etiam. </p>
                 </li>
-            </ul>
+            </ul></div></div>
+            
         </section>
 
-        <!---------------------------Кейсы-------------------------------->
+        <!---------------------------Кейсы--------------------------------->
         <section class="keisi">
-            <h2>Кейсы</h2>
-            <div>
-                <hr class="exid1">
-                <hr class="exid2">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Duis sed Dapibus leo
-                nec ornare diamcoccodo nibh ante facilisis.</p>
-            <img src="img/4/fotka.png">
+            <div class="container"><div class="row justify-content-center"><div class="col-2"><h2>Кейсы</h2></div>
+        </div>
+        <div class="row justify-content-center"><div class="col-2">            <div>
+            <hr class="exid1">
+            <hr class="exid2">
+        </div></div></div>
+           
+
+
+            <img src="../src/img/4/fotka.png">
             <article class="keisi_knopka">
                 <h5>Client:</h5>
                 <p>Какая-то компания</p>
@@ -167,6 +193,7 @@
                     pariatur.
                 </p>
             </article>
+        </div>
         </section>
         <!-----------------------Расчёт стоимости-------------------------->
         <section class="raschet">
@@ -242,7 +269,7 @@
             </article>
         </section>
     </main>
-    <!-----------------------Мои контакты-------------------------->
+    <!-----------------------Мои контакты------------------------
     <footer>
         <div class="polya">
             <h2>Мои контакты</h2>
@@ -289,8 +316,10 @@
         <div class="dno">
             <p>Copyright © 2021 Андрей Браун. Design by Web</p>
         </div>
-    </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    </footer>-->
+
+
+
 </body>
 
 </html>
