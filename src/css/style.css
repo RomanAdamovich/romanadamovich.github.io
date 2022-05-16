@@ -1,10 +1,12 @@
 /*---------------------------Header--------------------------------*/
 body {
     font-family: 'Franklin Gothic';
+    height: 100%;
 }
 
 p {
     font-family: 'Calibri';
+    font-size: 17px;
 }
 
 hr{
@@ -35,6 +37,9 @@ nav {
     to {
         margin-top: 1;
     }
+}
+main{
+    height: 100%;
 }
 
 .menu {
@@ -246,11 +251,11 @@ animation: title 2s  ease forwards;
     width: 70px;
     height: 3px;
     background-color: orange;
-    animation: hr1 1s ease 2 alternate forwards;
+    animation: transform_hr 1s ease 2 alternate forwards;
     
 }
 
-@keyframes hr1 {
+@keyframes transform_hr {     /*Для всех hr*/
     from {
         transform: scaleX(1);
     }
@@ -288,14 +293,14 @@ animation: title 2s  ease forwards;
 
 .dowload {
     position: absolute;
-    top:600px;
+    top:590px;
     margin-left:30px;
     height: 35px;
     width: 156px;
     border: 2px solid rgb(111 113 127);
     border-radius: 5px;
     font-size: 13px;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-left: 15px;
     color: #6d7682;
     transition: all 0.2s;
@@ -305,11 +310,7 @@ animation: title 2s  ease forwards;
     background: none;
     padding-left: 10px;
 }
-@media (max-width:767px){
-    .dowload{
-        top:650px;
-    }
-}
+
 
 .dowload:hover{
     background-color: #2c384a;
@@ -381,17 +382,7 @@ animation: title 2s  ease forwards;
     width: 70px;
     height: 3px;
     background-color: orange;
-    animation: chto_ya_ymeu_hr 1s ease 3 alternate-reverse forwards;
-}
-
-@keyframes chto_ya_ymeu_hr {
-    from {
-        transform: scaleX(1);
-    }
-
-    to {
-        transform: scaleX(5);
-    }
+    animation: transform_hr 1s ease 3 alternate-reverse forwards; /*@ keyframes в обо мне*/
 }
 
 .chto_ya_ymeu ul {
@@ -399,10 +390,7 @@ animation: title 2s  ease forwards;
     justify-content: space-around;
     position: relative;
     top:260px
-
 }
-
-
 
 .chto_ya_ymeu li:first-child {
     animation: up 0.2s 0.2s ease alternate;
@@ -444,92 +432,85 @@ i.znak{
 
 /*---------------------------Кейсы--------------------------------*/
 .keisi {
-    height: 800px;
-    position: relative;
-    z-index: -2;
+    height: 1215px;
+    
 }
 
 .keisi h2 {
-   margin-top: 110px;
+    margin-top: 110px;
     font-size: 33px;
     font-weight: bold;
     color: #344051;
     text-transform: uppercase;
 }
 
-hr.exid1 {
-    width: 35px;
+.keisi hr {
+    margin:17px 0 35px 30px;
+    width: 70px;
     height: 3px;
     background-color: orange;
-    position: absolute;
-    top: 160px;
-    animation: exid1 2s ease forwards;
+    animation: transform_hr 1s ease 2 alternate forwards; /*@ keyframes в обо мне*/
 }
 
-@keyframes exid1 {
-    0% {
-        left: 0;
-        opacity: 0;
-    }
-
-    100% {
-
-        opacity: 1;
-        left: 49%;
-    }
-}
-
-hr.exid2 {
-    width: 35px;
-    height: 3px;
-    background-color: orange;
-    position: absolute;
-    top: 160px;
-    animation: exid2 2s ease forwards;
-}
-
-@keyframes exid2 {
-    0% {
-        left: 100%;
-        opacity: 0;
-    }
-
-    100% {
-
-        opacity: 1;
-        left: 50%;
-    }
-}
-
-.keisi>p {
+.keisi p {
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
     color: #344051;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.keisi .img{
+    text-align: center;
+    background:url(../img/4/fotka1.png) top/contain no-repeat;
+    height:660px;
 }
 
-.keisi img {
-    position: absolute;
-    top: 300px;
-    animation: list 0.5s ease 4 alternate;
+.keisi .img {
+   animation: list 2s ease;
 }
 
 @keyframes list {
     0% {
-        transform: scale(1)
+        opacity: 0;
     }
 
     100% {
-        transform: scale(0.9)
+        opacity: 1;
+    }
+}
+
+.keisi_block{
+    position: relative;
+    top:20px;
+}
+
+@media (max-width:1399px) {
+    .keisi_block{
+        top:-80px;
+    }
+}
+
+@media (max-width:1199px) {
+    .keisi_block{
+        top:-170px;
+    }
+}
+
+@media (max-width:991px) {
+    .keisi_block{
+        top:-290px;
+    }
+}
+
+@media (max-width:767px) {
+    .keisi_block{
+        top:-380px;
     }
 }
 
 .keisi_knopka {
     float: left;
-    width: 284px;
-    position: absolute;
-    top: 700px;
-    left: 390px;
+    width: 230px;
 }
 
 .keisi_knopka h5 {
@@ -539,14 +520,13 @@ hr.exid2 {
 }
 
 .keisi_knopka p {
+    text-align: left;
     margin: 17px 0;
 }
 
 .keisi_text {
-    width: 850px;
-    position: absolute;
-    top: 700px;
-    left: 670px;
+    
+    margin-left: 30px;;
 }
 
 .keisi_text h4 {
@@ -555,8 +535,9 @@ hr.exid2 {
 }
 
 .keisi_text p {
+    text-align: justify;
     line-height: 27px;
-    margin-top: 5px;
+  
 }
 
 .keisi_knopka input {
