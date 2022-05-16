@@ -433,7 +433,6 @@ i.znak{
 /*---------------------------Кейсы--------------------------------*/
 .keisi {
     height: 1215px;
-    
 }
 
 .keisi h2 {
@@ -488,11 +487,17 @@ i.znak{
     .keisi_block{
         top:-80px;
     }
+    .keisi {
+        height: 1150px;
+    }
 }
 
 @media (max-width:1199px) {
     .keisi_block{
         top:-170px;
+    }
+    .keisi {
+        height: 1050px;
     }
 }
 
@@ -500,11 +505,17 @@ i.znak{
     .keisi_block{
         top:-290px;
     }
+    .keisi {
+        height: 950px;
+    }
 }
 
 @media (max-width:767px) {
     .keisi_block{
         top:-380px;
+    }
+    .keisi {
+        height: 900px;
     }
 }
 
@@ -560,53 +571,86 @@ i.znak{
 }
 
 /*---------------------------Расчёт стоимости--------------------------------*/
-.raschet {
+.raschet {border: 1px solid red;
     height: 950px;
 }
 
-.raschet h2 {
-    margin-top: 200px;
-    font-size: 26px;
-    font-weight: bold;
-    color: #344051;
-    text-align: center;
-    text-transform: uppercase;
+.list{border: 1px solid red;
+    height: 760px;
+    width: 100%;
+    box-shadow: 0 0 10px black;
 }
 
-.spiski {
-    width: 900px;
-    height: 510px;
-    margin: 60px 0 0 500px;
+
+.spiski {border: 1px solid red;
+width:80%;
+margin-left: 10%;
+}
+
+.spiski .div{
+    margin-top:50px;
 }
 
 .spiski h3 {
-    font-size: 20px;
     text-transform: uppercase;
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-left: 5%;
 }
 
-select {
-    width: 900px;
+select {border: 1px solid red;
+    width: 90%;
+    margin-left: 5%;
     height: 60px;
     background-color: rgb(238 238 238);
     border-radius: 2px;
     font-size: 16px;
     font-weight: bold;
     color: rgb(162 162 162);
-    margin-bottom: 50px;
+}
+@media (max-width:1399px) {
+    select {
+        height: 55px;
+    }
+}
+
+@media (max-width:1199px) {
+    select {
+        height: 50px;
+    }
+}
+
+@media (max-width:991px) {
+    select {
+        height: 45px;
+    }
+}
+
+@media (max-width:767px) {
+    select {
+        height: 40px;
+    }
+    
+}
+.raschet h2 {
+    margin-top: 50px;
+    font-size: 33px;
+    font-weight: bold;
+    color: #344051;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .raschet select:last-of-type {
-    margin: 0 0 40px 0;
 }
 
 #hr {
     border: 1px solid rgb(210 210 210);
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     height: 3px;
     background-color: rgb(210 210 210);
-    margin: 30px 0 0 0px;
+   
 }
 
 .spiski pre {
