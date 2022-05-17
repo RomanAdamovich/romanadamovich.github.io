@@ -305,7 +305,15 @@ animation: title 2s  ease forwards;
 }
 @media(max-width:991px){
     .dowload {
-        top:630px;
+        top:650px;
+    }
+}
+@media(max-width:575px){
+    .dowload {
+        top:700px;
+    }
+    .obo_mne {
+        height: 800px;
     }
 }
 .dowload  input {
@@ -391,6 +399,12 @@ animation: title 2s  ease forwards;
     justify-content: space-around;
     position: relative;
     top:260px;
+}
+
+@media(max-width:767px){
+    .chto_ya_ymeu ul {
+        top:220px;
+    }
 }
 
 .chto_ya_ymeu li:first-child {
