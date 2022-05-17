@@ -52,6 +52,7 @@ nav {
     animation: li ease 0.4s forwards;
     opacity: 0;
 }
+
 @keyframes li {
     from {
         opacity: 0;
@@ -103,8 +104,6 @@ nav {
     color: orange;
 }
 
-
-
 @keyframes li {
     from {
         opacity: 0;
@@ -118,8 +117,6 @@ nav {
 }
 
 /*---------------------------Привет--------------------------------*/
-
-
 .glav {
     height:1000px;
     width: 100%;
@@ -130,8 +127,8 @@ nav {
     margin-top: 200px;
     float: left;
     text-align: center;
-    nimation: title 2s ease 2.4s forwards;
-    opacity: 1;
+    animation: title 2s ease 2.4s forwards;
+    opacity: 0;
 }
 
 .title_container h1 {
@@ -178,6 +175,7 @@ nav {
         opacity: 1;
     }
 }
+
 @media (max-width:991px) {
     .title_container h1,.title_container h4,.title_container input{
     color: white;
@@ -249,7 +247,6 @@ animation: title 2s  ease forwards;
     height: 3px;
     background-color: orange;
     animation: transform_hr 1s ease 2 alternate forwards;
-    
 }
 
 @keyframes transform_hr {     /*Для всех hr*/
@@ -288,6 +285,20 @@ animation: title 2s  ease forwards;
     text-align: justify;
 }
 
+.text_obo_mne p {
+    animation: one 2s ease 2s backwards;
+}
+
+@keyframes one {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .dowload {
     position: absolute;
     top:590px;
@@ -301,13 +312,15 @@ animation: title 2s  ease forwards;
     padding-left: 15px;
     color: #6d7682;
     transition: all 0.2s;
-    animation: one 5s 3s ease backwards;
+    animation: one 3s  ease 4s backwards;
 }
+
 @media(max-width:991px){
     .dowload {
         top:650px;
     }
 }
+
 @media(max-width:575px){
     .dowload {
         top:700px;
@@ -316,6 +329,7 @@ animation: title 2s  ease forwards;
         height: 800px;
     }
 }
+
 .dowload  input {
     background: none;
     padding-left: 10px;
@@ -323,26 +337,12 @@ animation: title 2s  ease forwards;
 
 .dowload:hover{
     background-color: #2c384a;
-    color: white;}
+    color: white;
+}
 
 .dowload:active {
     transform: scale(1.1)
 }
-
-.text_obo_mne p {
-    animation: one 5s 2.5s ease backwards;
-}
-
-@keyframes one {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 /*---------------------------Что я умею--------------------------------*/
 .chto_ya_ymeu {
     text-align: center;
@@ -358,7 +358,6 @@ animation: title 2s  ease forwards;
     font-weight: bold;
     color: #344051;
     text-transform: uppercase;
-   
 }
 
 .chto {
@@ -432,19 +431,18 @@ animation: title 2s  ease forwards;
         margin-top:-20px;
     }
 }
+
 i.znak{
    font-size: 40px;
    color:#2c3e51;
 }
+
 .chto_ya_ymeu .veb {
     color: rgb(232 126 0);
     margin: 37px 0 20px 0;
     font-weight: bold;
     font-size: 13px;
 }
-
-
-
 /*---------------------------Кейсы--------------------------------*/
 .keisi {
     height: 1215px;
@@ -471,8 +469,8 @@ i.znak{
     font-size: 17px;
     color: #344051;
     margin-bottom: 30px;
-    
 }
+
 .keisi .img{
     text-align: center;
     background:url(../img/4/fotka1.png) top/contain no-repeat;
@@ -551,7 +549,6 @@ i.znak{
 }
 
 .keisi_text {
-    
     margin-left: 30px;;
 }
 
@@ -563,7 +560,6 @@ i.znak{
 .keisi_text p {
     text-align: justify;
     line-height: 27px;
-  
 }
 
 .keisi_knopka input {
@@ -658,10 +654,6 @@ select {
     
 }
 
-
-.raschet select:last-of-type {
-}
-
 #hr {
     border: 1px solid rgb(210 210 210);
     width: 80%;
@@ -678,9 +670,11 @@ select {
     font-weight: bold;
     font-size: 16px;;
 }
+
 .input{
     text-align: center;
 }
+
 .list input {
     width: 200px;
     height: 50px;
@@ -691,6 +685,7 @@ select {
     text-transform: uppercase;
     transition: all 0.1s ease;
 }
+
 .list input:hover {
     background-image: linear-gradient(rgb(0 182 175) 0%, black);
 }
@@ -726,7 +721,6 @@ select {
 }
 
 .stat ul {
-
     position: relative;
     top:260px;
 }
@@ -767,8 +761,6 @@ select {
 i.progres {
     font-size: 52px;
     color:orange;
-    
-   
 }
 
 .stat .cifri {
@@ -785,7 +777,6 @@ i.progres {
 }
 
 /*---------------------------Отзывы--------------------------------*/
-/* Пока не знаю как делать скроллинг страниц по горизонтали*/
 .otzivi {
     position: relative;
     height: 600px;
@@ -800,13 +791,13 @@ i.progres {
     text-align: center;
     text-transform: uppercase;
 }
+
 .otzivi .hr{   
     display: flex;
     justify-content: center;
 }
 
 .otzivi hr {
-
     width: 70px;
     height: 3px;
     background-color: orange;
@@ -815,18 +806,16 @@ i.progres {
 .text_otzivi {
     width: 50%;
     margin-left: 25%;
-  position: relative;
-  top:180px;
+    position: relative;
+    top:180px;
     text-align: center;
     color: #344051;
 }
 
 .otzivi .general {
     text-align: center;
-    
-   position: relative;
-   top:210px;  
-    
+    position: relative;
+    top:210px;  
 }
 /*---------------------------Мои контакты--------------------------------*/
 footer {
@@ -865,13 +854,12 @@ footer {
    width: 80%;
    margin-left: 10%;
 }
+
 .polya ul {
     display: flex;
     justify-content: center;
     padding-left:0;
-  
 }
-
 
 .polya li:nth-child(2) {
       margin:0 50px;
@@ -881,21 +869,18 @@ footer {
     .polya li:nth-child(2){
         margin:0 20px;
     }  
-   
 }
 
 @media(max-width:580px){
     .polya li:nth-child(2){
         margin:0 5px;
     }    
-    
 }
 
 .polya h3 {
     text-transform: uppercase;
     margin: 39px 0 45px 0;
     font-size: 20px;
-    
 }
 
 footer input.name {
@@ -914,6 +899,7 @@ footer input.email {
     height: 95px;
     margin: 17px 0 30px 0;
 }
+
 @media (max-width:991px){
     footer input.name{
         margin-bottom: 17px;
@@ -937,6 +923,7 @@ footer input.email {
         font-size: 13px; 
     }
 }
+
 footer input.knopka {
     width: 120px;
     height: 50px;
@@ -955,16 +942,6 @@ footer input.knopka:hover {
 footer input.knopka:active {
     transform: scale(1.1);
 }
-
-footer .ss {
-    margin: 67px 0 0 743px
-}
-
-.ss img {
-    margin-right: 53px;
-    float: left;
-}
-
 /*---------------------------Карта--------------------------------*/
 
 .dno {
@@ -972,7 +949,6 @@ footer .ss {
     background-color: #344051;
     line-height: 60px;
 }
-
 
 /*--------------------Loader---------------*/
 
@@ -998,7 +974,6 @@ footer .ss {
     text-align: center;
     animation: preloader-rotate 3s infinite linear;
 }
-
 
 .preloader__item {
     position: absolute;
