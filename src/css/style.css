@@ -266,8 +266,8 @@ animation: title 2s  ease forwards;
 }
 
 .obo_mne img {
-   position: absolute;
-   top:180px;
+    position: absolute;
+    top:180px;
     margin-left: 7px;
     animation: foto 2s 2s ease backwards;
 }
@@ -389,7 +389,7 @@ animation: title 2s  ease forwards;
     display: flex;
     justify-content: space-around;
     position: relative;
-    top:260px
+    top:260px;
 }
 
 .chto_ya_ymeu li:first-child {
@@ -571,20 +571,29 @@ i.znak{
 }
 
 /*---------------------------Расчёт стоимости--------------------------------*/
-.raschet {border: 1px solid red;
+.raschet {
     height: 950px;
 }
 
-.list{border: 1px solid red;
+.list{
     height: 760px;
     width: 100%;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
 }
 
+.raschet h2 {
+    padding-top: 50px;
+    font-size: 33px;
+    font-weight: bold;
+    color: #344051;
+    text-align: center;
+    text-transform: uppercase;
+}
 
-.spiski {border: 1px solid red;
-width:80%;
-margin-left: 10%;
+.spiski {
+    width:80%;
+    margin-left: 10%;
 }
 
 .spiski .div{
@@ -598,7 +607,7 @@ margin-left: 10%;
     margin-left: 5%;
 }
 
-select {border: 1px solid red;
+select {
     width: 90%;
     margin-left: 5%;
     height: 60px;
@@ -608,6 +617,7 @@ select {border: 1px solid red;
     font-weight: bold;
     color: rgb(162 162 162);
 }
+
 @media (max-width:1399px) {
     select {
         height: 55px;
@@ -632,14 +642,7 @@ select {border: 1px solid red;
     }
     
 }
-.raschet h2 {
-    margin-top: 50px;
-    font-size: 33px;
-    font-weight: bold;
-    color: #344051;
-    text-align: center;
-    text-transform: uppercase;
-}
+
 
 .raschet select:last-of-type {
 }
@@ -650,12 +653,35 @@ select {border: 1px solid red;
     margin-left: 10%;
     height: 3px;
     background-color: rgb(210 210 210);
-   
 }
 
-.spiski pre {
-    font-size: 20px;
+.sroki {
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
     font-weight: bold;
+    font-size: 16px;;
+}
+.input{
+    text-align: center;
+}
+.list input {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgb(0 182 175);
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.1s ease;
+}
+.list input:hover {
+    background-image: linear-gradient(rgb(0 182 175) 0%, black);
+}
+
+.list input:active {
+    transform: scale(1.1);
 }
 
 /*---------------------------Немного стастики--------------------------------*/
@@ -664,28 +690,31 @@ select {border: 1px solid red;
     height: 500px;
     background: url(../img/6/фон.png) center/cover no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
 .stat h2 {
+    position: absolute;
+    top:110px;
     font-size: 26px;
     font-weight: bold;
     color: #344051;
-    padding-top: 100px;
     text-transform: uppercase;
 }
 
 .stat hr {
+    position: absolute;
+    top:160px;
     width: 70px;
     height: 3px;
     background-color: orange;
-    margin: 30px 0 40px 915px;
 }
 
-
-.stat li {
-    display: inline-block;
-    width: 175px;
-    margin: 60px 0 0 120px;
+.stat ul {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top:260px;
 }
 
 .stat li:first-child {
@@ -721,9 +750,16 @@ select {border: 1px solid red;
     }
 }
 
+i.progres {
+    font-size: 52px;
+    color:orange;
+    
+   
+}
+
 .stat .cifri {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 26px;
+    font-weight: bold;
     margin: 25px 0;
 }
 
@@ -737,9 +773,9 @@ select {border: 1px solid red;
 /*---------------------------Отзывы--------------------------------*/
 /* Пока не знаю как делать скроллинг страниц по горизонтали*/
 .otzivi {
-    text-align: center;
+    position: relative;
     height: 600px;
-    background: url(../img/7/фотка.png) center/auto no-repeat;
+    background: url(../img/7/фотка.png) 50% 45%/auto no-repeat;
 }
 
 .otzivi h2 {
@@ -750,26 +786,34 @@ select {border: 1px solid red;
     text-align: center;
     text-transform: uppercase;
 }
+.otzivi .hr{   
+    display: flex;
+    justify-content: center;
+}
 
 .otzivi hr {
+
     width: 70px;
     height: 3px;
     background-color: orange;
-    margin: 30px 0 40px 915px;
 }
 
 .text_otzivi {
+    width: 50%;
+    margin-left: 25%;
+  position: relative;
+  top:180px;
     text-align: center;
-    width: 700px;
-    margin: 200px 0 0 620px;
     color: #344051;
 }
 
-.text_otzivi p:last-child {
-    margin-top: 40px;
-    font-size: 13px;
+.otzivi .general {
+    text-align: center;
+    
+   position: relative;
+   top:210px;  
+    
 }
-
 /*---------------------------Мои контакты--------------------------------
 footer {
     height: 100%;
