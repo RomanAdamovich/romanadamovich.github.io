@@ -1,4 +1,3 @@
-/*---------------------------Header--------------------------------*/
 body {
     font-family: 'Franklin Gothic';
     height: 100%;
@@ -12,7 +11,7 @@ p {
 hr{
     opacity: 1;
 }
-
+/*---------------------------Header--------------------------------*/
 nav {
     height: 60px;
     width: 100%;
@@ -117,18 +116,24 @@ nav {
 }
 
 /*---------------------------Привет--------------------------------*/
+main{
+    height: 100%;
+}
+
 .glav {
-    height:1000px;
+    height:1000px;;
     width: 100%;
     background: url(../img/1/Парень.png) 90% 100% /auto 85% no-repeat, url(../img/1/фон.png) center/cover no-repeat fixed;
 }
 
 .title_container {
+    position: relative;
     margin-top: 200px;
     float: left;
     text-align: center;
     animation: title 2s ease 2.4s forwards;
     opacity: 0;
+    z-index: 1;
 }
 
 .title_container h1 {
@@ -203,7 +208,7 @@ animation: title 2s  ease forwards;
     bottom: 0;
     position: absolute;
     background-color: rgba(0,0,0,0.4);
-    z-index: 1;
+    z-index: 0;
 }
 }
 
@@ -492,8 +497,15 @@ i.znak{
 }
 
 .keisi_block{
+    border: 1px solid red;
     position: relative;
     top:20px;
+}
+
+.keisi_knopka {
+    float: left;
+    width: 230px;
+
 }
 
 @media (max-width:1399px) {
@@ -514,28 +526,8 @@ i.znak{
     }
 }
 
-@media (max-width:991px) {
-    .keisi_block{
-        top:-290px;
-    }
-    .keisi {
-        height: 950px;
-    }
-}
 
-@media (max-width:767px) {
-    .keisi_block{
-        top:-380px;
-    }
-    .keisi {
-        height: 900px;
-    }
-}
 
-.keisi_knopka {
-    float: left;
-    width: 230px;
-}
 
 .keisi_knopka h5 {
     text-transform: uppercase;
@@ -549,7 +541,7 @@ i.znak{
 }
 
 .keisi_text {
-    margin-left: 30px;;
+    margin-left: 30px;
 }
 
 .keisi_text h4 {
@@ -562,7 +554,10 @@ i.znak{
     line-height: 27px;
 }
 
-.keisi_knopka input {
+.submit {float:left;
+    clear: left;
+}
+.submit input{
     width: 200px;
     height: 50px;
     color: #fff;
@@ -573,13 +568,50 @@ i.znak{
     transition: all 0.1s ease;
 }
 
-.keisi_knopka input:hover {
+.submit input:hover {
     background-image: linear-gradient(rgb(0 182 175) 0%, black);
 }
 
-.keisi_knopka input:active {
+.keisi_block input:active {
     transform: scale(1.1);
 }
+@media (max-width:767px) {
+    .keisi_block{
+        top:-380px;
+    }
+    .keisi {
+        height: 900px;
+    }
+    .keisi_knopka{
+        float:none;
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .submit input{
+        
+    }
+    .submit {float:none;
+        text-align: center;
+        width: 100%;;
+    
+}
+.submit {
+    margin-right:0;
+}
+}
+@media (max-width:991px) {
+    .keisi_block{
+        top:-290px;
+    }
+    .keisi {
+        height: 950px;
+    }
+    .submit {
+        margin-right: 30px;
+    }
+}
+
 
 /*---------------------------Расчёт стоимости--------------------------------*/
 .raschet {
@@ -826,7 +858,7 @@ footer {
 .polya {
     text-align: center;
     height: 810px;
-    background: url(../img/8/Фон.png) center/auto no-repeat;
+    background: url(../img/8/fon1.jpg) center/auto no-repeat;
 }
 
 .polya h2 {
