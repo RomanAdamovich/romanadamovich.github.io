@@ -1,92 +1,78 @@
-/*---------------------------Header--------------------------------*/
-body {
-    font-family: 'Franklin Gothic';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic';
+    min-height: 100vh;
+}
+
 p {
     font-family: 'Calibri';
+    font-size: 17px;
 }
-header{
-    height:6%;
+
+hr {
+    opacity: 1;
 }
-nav {
-    height: 6%;
+
+
+/*---------------------------Header--------------------------------*/
+
+.container {
+    border: 1px solid red;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
     width: 100%;
-    background-color: #344051;
+    background-color: rgba(70, 74, 99, 1);
     position: fixed;
-    z-index: 1;
+    z-index: 10;
 }
 
-.logo {
-    float: left;
-    margin-left: 390px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white
+}
+
+.nav-title {
     line-height: 60px;
-    font-size: 1.45%;
     animation: comming 2s ease;
-    color: #fff;
 }
 
-.menu {
-    float: left;
-    margin-left: 430px;
-}
-
-.menu li {
-    float: left;
-    margin-right: 40px;
-    line-height: 60px;
-    text-transform: uppercase;
-    font-size: 16px;
-    animation: li ease 0.4s forwards;
-    opacity: 0;
-    }
-
-.menu li:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.menu li:nth-child(3) {
-    animation-delay: 0.8s;
-}
-
-.menu li:nth-child(4) {
-    animation-delay: 1.2s;
-}
-
-.menu li:nth-child(5) {
-    animation-delay: 1.6s;
-}
-
-.menu li:nth-child(6) {
-    animation-delay: 2s;
-}
-
-.menu li a {
-    transition: all 0.1s;
-    display: inline-block;
-    transform: scale(1);
-    color: #fff;
-}
-
-.menu li a:active {
-    transform: scale(1.1);
-}
-
-.menu li a:visited {
-    color: #fff;
-}
-
-.menu li a:hover {
-    color: orange;
+.nav-link {
+    color: white;
+    padding: 0 14px;
 }
 
 @keyframes comming {
     from {
         opacity: 0;
     }
-
     to {
         margin-top: 1;
     }
+}
+
+.nav-menu {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    animation: li 1s ease forwards;
+    opacity: 0;
 }
 
 @keyframes li {
@@ -94,44 +80,99 @@ nav {
         opacity: 0;
         margin-top: -80px;
     }
+    to {
+        opacity: 1;
+    }
+}
 
+.nav-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.nav-item:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.nav-item:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.nav-item:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.nav-link {
+    transition: all 0.1s;
+    transform: scale(1);
+    padding: 20px 14px;
+}
+
+.nav-link:active {
+    transform: scale(1.1);
+}
+
+.nav-link:visited {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+@keyframes li {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
     to {
         opacity: 1;
         margin-top: 0;
     }
 }
 
-/*--------------------------Привет--------------------------------*/
-main{
-    height:100%;
-}
-.glav {
-    height:94%;
-    background: url(../img/1/Парень.png) 90% 100% /43% 90% no-repeat, url(../img/1/фон.png) center/cover no-repeat;
+
+/*---------------------------Привет--------------------------------*/
+
+.section-profile {
+    background: url(../img/1/Парень.png) 90% 100% /auto 85% no-repeat, url(../img/1/фон.png) center/100% 100% no-repeat fixed;
 }
 
-.title_container {
+.profile-title {
+    display: flex;
+    height: 1000px;
+    align-items: center;
+    border: 1px solid red;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.profile-list {
+    position: relative;
+    margin-top: 200px;
     float: left;
-    margin: 433px 0 0 400px;
     text-align: center;
-    animation: title 2s ease forwards;
-    animation-delay: 2.4s;
-    opacity: 0;
+    nimation: title 2s ease 2.4s forwards;
+    opacity: 1;
+    z-index: 1;
 }
 
-.title_container h1 {
-    font-size: 60px;
+.profile-listH1 {
+    font-size: 72px;
     font-weight: bold;
     color: #2c384a;
 }
 
-.title_container h4 {
+.profile-listH4 {
     margin-top: 43px;
     font-weight: bold;
     color: #79818d;
 }
 
-.title_container input {
+.button {
     height: 40px;
     text-align: center;
     border: 2px solid #6d7682;
@@ -144,11 +185,11 @@ main{
     transition: all 0.2s;
 }
 
-.title_container input:active {
+.button:active {
     transform: scale(1.1);
 }
 
-.title_container input:hover {
+.button input:hover {
     background-color: #2c384a;
     color: white;
 }
@@ -158,69 +199,96 @@ main{
         opacity: 0;
         margin-left: -500px;
     }
-
     to {
         opacity: 1;
-        margin-left: 400px;
     }
 }
 
+@media (max-width:991px) {
+    .profile-listH1,
+    .profile-listH4,
+    .title_container input {
+        color: white;
+        position: relative;
+        z-index: 2;
+    }
+    .button {
+        border: 2px solid #fff;
+    }
+    .profile-list {
+        animation: title 2s ease forwards;
+    }
+    .glav {
+        position: relative;
+    }
+    .glav:after {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+    }
+}
+
+
 /*---------------------------Обо мне--------------------------------*/
+
 .obo_mne {
-    text-align: center;
-    width: 100%;
     height: 720px;
+    width: 100%;
     box-shadow: 0 -3px 30px #6d7682;
     position: relative;
-    border: 1px solid red;
 }
 
 .obo_mne h2 {
-    font-size: 26px;
+    position: absolute;
+    top: 90px;
+    font-size: 33px;
     font-weight: bold;
     color: #344051;
-    padding-top: 110px;
+    margin-left: 23px;
     text-transform: uppercase;
     animation: obo_mne 0.8s 1.5s ease backwards;
 }
 
 @keyframes obo_mne {
     from {
-        padding-top: 0;
+        margin-top: -90px;
         opacity: 0;
     }
-
     to {
-        padding-top: 110px;
+        margin-top: 0;
         opacity: 1;
     }
 }
 
 .obo_mne hr {
-    float: right;
+    position: absolute;
+    top: 135px;
+    margin-left: 72px;
     width: 70px;
     height: 3px;
     background-color: orange;
-    position: absolute;
-    top: 160px;
-    left: 920px;
-    animation: hr1 1s ease 2 alternate forwards;
+    animation: transform_hr 1s ease 2 alternate forwards;
 }
 
-@keyframes hr1 {
+@keyframes transform_hr {
+    /*Для всех hr*/
     from {
         transform: scaleX(1);
     }
-
     to {
-        transform: scaleX(20);
+        transform: scaleX(5);
     }
 }
 
 .obo_mne img {
     position: absolute;
-    top: 225px;
-    left: 863px;
+    top: 180px;
+    margin-left: 7px;
     animation: foto 2s 2s ease backwards;
 }
 
@@ -228,121 +296,146 @@ main{
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
 }
 
 .text_obo_mne {
-    
-    width: 700px;
-    position: absolute;
-    left: 600px;
-    top: 500px;
-    
-}
-
-.obo_mne input {
-    height: 35px;
-    width: 156px;
-    border: 2px solid rgb(111 113 127);
-    background: none;
-    color: #6d7682;
-    font-size: 13px;
-    font-weight: bold;
-    padding-left: 20px;
-    border-radius: 5px;
-    margin-top: 40px;
-    background: url(../img/2/dowload.png) 10px 8px/13px 13px no-repeat;
+    position: relative;
+    top: 415px;
+    left: 15px;
+    font-size: 18px;
     animation: one 5s 3s ease backwards;
-}
-
-.obo_mne input:hover {
-    background-color: #2c384a;
-    transition: all 0.2s;
-    color: white;
-}
-
-.obo_mne input:active {
-    transform: scale(1.1)
+    text-align: justify;
 }
 
 .text_obo_mne p {
-    font-family: 'Calibri';
-    font-famil: 'Franklin Gothic';
-    font-size: 18px;
-    animation: one 5s 2.5s ease backwards;
+    animation: one 2s ease 2s backwards;
 }
 
 @keyframes one {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
 }
 
+.dowload {
+    position: absolute;
+    top: 590px;
+    margin-left: 30px;
+    height: 35px;
+    width: 156px;
+    border: 2px solid rgb(111 113 127);
+    border-radius: 5px;
+    font-size: 13px;
+    padding-top: 7px;
+    padding-left: 15px;
+    color: #6d7682;
+    transition: all 0.2s;
+    animation: one 3s ease 4s backwards;
+}
+
+@media(max-width:991px) {
+    .dowload {
+        top: 650px;
+    }
+}
+
+@media(max-width:575px) {
+    .dowload {
+        top: 700px;
+    }
+    .obo_mne {
+        height: 800px;
+    }
+}
+
+.dowload input {
+    background: none;
+    padding-left: 10px;
+}
+
+.dowload:hover {
+    background-color: #2c384a;
+    color: white;
+}
+
+.dowload:active {
+    transform: scale(1.1)
+}
+
+
 /*---------------------------Что я умею--------------------------------*/
+
 .chto_ya_ymeu {
     text-align: center;
     height: 523px;
-    background: url(../img/3/картинка\ фона.png) center/ cover no-repeat;
+    background: url(../img/3/картинка\ фона.png) center/ cover no-repeat fixed;
     position: relative;
 }
 
 .chto_ya_ymeu h2 {
-    font-size: 26px;
+    position: absolute;
+    top: 110px;
+    font-size: 33px;
     font-weight: bold;
     color: #344051;
     text-transform: uppercase;
-    position: absolute;
-    left: 874px;
-    top: 110px;
 }
 
 .chto {
-    animation: mash 0.2s 0.3s ease backwards;
+    animation: mash 0.2s 0.3s linear backwards;
 }
 
 .i {
-    animation: mash 0.2s 0.7s ease backwards;
+    animation: mash 0.2s 0.7s linear backwards;
 }
 
 .skill {
-    animation: mash 0.2s 1.1s ease backwards;
+    animation: mash 0.2s 1.1s linear backwards;
 }
 
 @keyframes mash {
     from {
         opacity: 0;
-        font-size: 10px;
+        font-size: 0;
     }
-
     to {
         opacity: 1;
         font-size: 26px;
     }
 }
 
-.chto_ya_ymeu ul {
-    height: 172px;
+.chto_ya_ymeu hr {
     position: absolute;
-    top: 265px;
-    left: 320px;
+    top: 160px;
+    margin-left: 75px;
+    width: 70px;
+    height: 3px;
+    background-color: orange;
+    animation: transform_hr 1s ease 3 alternate-reverse forwards;
+    /*@ keyframes в обо мне*/
 }
 
-.chto_ya_ymeu li {
-    display: inline-block;
-    width: 220px;
-    margin-left: 100px;
-    vertical-align: top;
+.chto_ya_ymeu ul {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 260px;
+}
+
+@media(max-width:767px) {
+    .chto_ya_ymeu ul {
+        top: 220px;
+    }
 }
 
 .chto_ya_ymeu li:first-child {
-    animation: up 0.2s 0.2s ease 2 alternate;
+    animation: up 0.2s 0.2s ease alternate;
 }
 
 .chto_ya_ymeu li:nth-child(2) {
@@ -361,137 +454,99 @@ main{
     0 {
         margin-top: 0px;
     }
-
     100% {
         margin-top: -20px;
     }
 }
 
+i.znak {
+    font-size: 40px;
+    color: #2c3e51;
+}
+
 .chto_ya_ymeu .veb {
     color: rgb(232 126 0);
     margin: 37px 0 20px 0;
-    font-weight:bold;
-    font-size: 19px;
+    font-weight: bold;
+    font-size: 13px;
 }
 
-.chto_ya_ymeu hr {
-    height: 3px;
-    background-color: orange;
-    position: absolute;
-    animation: hr ease 1.9s forwards;
-}
-
-@keyframes hr {
-    0% {
-        left: 200px;
-        top: 160px;
-        opacity: 0;
-        width: 70px;
-    }
-
-    50% {
-
-        top: 160px;
-        opacity: 0.5;
-        width: 150px;
-    }
-
-    100% {
-        left: 925px;
-        top: 160px;
-        opacity: 1;
-        width: 70px;
-    }
-}
 
 /*---------------------------Кейсы--------------------------------*/
+
 .keisi {
-    height: 800px;
-    position: relative;
+    height: 1215px;
 }
 
 .keisi h2 {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 26px;
+    margin-top: 110px;
+    font-size: 33px;
     font-weight: bold;
     color: #344051;
     text-transform: uppercase;
 }
 
-hr.exid1 {
-    width: 35px;
+.keisi hr {
+    margin: 17px 0 35px 30px;
+    width: 70px;
     height: 3px;
     background-color: orange;
-    position: absolute;
-    top: 40px;
-    animation: exid1 2s ease forwards;
+    animation: transform_hr 1s ease 2 alternate forwards;
+    /*@ keyframes в обо мне*/
 }
 
-@keyframes exid1 {
-    0% {
-        left: 0;
-        opacity: 0;
-    }
-
-    100% {
-
-        opacity: 1;
-        left: 915px;
-    }
-}
-
-hr.exid2 {
-    width: 35px;
-    height: 3px;
-    background-color: orange;
-    position: absolute;
-    top: 40px;
-    animation: exid2 2s ease forwards;
-}
-
-@keyframes exid2 {
-    0% {
-        left: 1920px;
-        opacity: 0;
-    }
-
-    100% {
-
-        opacity: 1;
-        left: 950px;
-    }
-}
-
-.keisi>p {
+.keisi p {
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
     color: #344051;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.keisi img {
-    position: absolute;
-    top: 100px;
-    animation: list 0.5s ease 4 alternate;
+.keisi .img {
+    text-align: center;
+    background: url(../img/4/fotka1.png) top/contain no-repeat;
+    height: 660px;
+}
+
+.keisi .img {
+    animation: list 2s ease;
 }
 
 @keyframes list {
     0% {
-        transform: scale(1)
+        opacity: 0;
     }
-
     100% {
-        transform: scale(0.9)
+        opacity: 1;
     }
+}
+
+.keisi_block {
+    position: relative;
+    top: 20px;
 }
 
 .keisi_knopka {
     float: left;
-    width: 284px;
-    position: absolute;
-    top: 700px;
-    left: 390px;
+    width: 230px;
+}
+
+@media (max-width:1399px) {
+    .keisi_block {
+        top: -80px;
+    }
+    .keisi {
+        height: 1150px;
+    }
+}
+
+@media (max-width:1199px) {
+    .keisi_block {
+        top: -170px;
+    }
+    .keisi {
+        height: 1050px;
+    }
 }
 
 .keisi_knopka h5 {
@@ -501,14 +556,12 @@ hr.exid2 {
 }
 
 .keisi_knopka p {
+    text-align: left;
     margin: 17px 0;
 }
 
 .keisi_text {
-    width: 850px;
-    position: absolute;
-    top: 700px;
-    left: 670px;
+    margin-left: 30px;
 }
 
 .keisi_text h4 {
@@ -517,11 +570,16 @@ hr.exid2 {
 }
 
 .keisi_text p {
+    text-align: justify;
     line-height: 27px;
-    margin-top: 5px;
 }
 
-.keisi_knopka input {
+.submit {
+    float: left;
+    clear: left;
+}
+
+.submit input {
     width: 200px;
     height: 50px;
     color: #fff;
@@ -532,22 +590,68 @@ hr.exid2 {
     transition: all 0.1s ease;
 }
 
-.keisi_knopka input:hover {
+.submit input:hover {
     background-image: linear-gradient(rgb(0 182 175) 0%, black);
 }
 
-.keisi_knopka input:active {
+.keisi_block input:active {
     transform: scale(1.1);
 }
 
+@media (max-width:767px) {
+    .keisi_block {
+        top: -380px;
+    }
+    .keisi {
+        height: 900px;
+    }
+    .keisi_knopka {
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .submit input {}
+    .submit {
+        float: none;
+        text-align: center;
+        width: 100%;
+        ;
+    }
+    .submit {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:991px) {
+    .keisi_block {
+        top: -290px;
+    }
+    .keisi {
+        height: 950px;
+    }
+    .submit {
+        margin-right: 30px;
+    }
+}
+
+
 /*---------------------------Расчёт стоимости--------------------------------*/
+
 .raschet {
     height: 950px;
 }
 
+.list {
+    height: 760px;
+    width: 100%;
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
+}
+
 .raschet h2 {
-    margin-top: 200px;
-    font-size: 26px;
+    padding-top: 50px;
+    font-size: 33px;
     font-weight: bold;
     color: #344051;
     text-align: center;
@@ -555,74 +659,132 @@ hr.exid2 {
 }
 
 .spiski {
-    width: 900px;
-    height: 510px;
-    margin: 60px 0 0 500px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.spiski .div {
+    margin-top: 50px;
 }
 
 .spiski h3 {
-    font-size: 20px;
     text-transform: uppercase;
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-left: 5%;
+}
+
+option {
+    color: black;
 }
 
 select {
-    width: 900px;
+    width: 90%;
+    margin-left: 5%;
     height: 60px;
     background-color: rgb(238 238 238);
     border-radius: 2px;
     font-size: 16px;
     font-weight: bold;
     color: rgb(162 162 162);
-    margin-bottom: 50px;
 }
 
-.raschet select:last-of-type {
-    margin: 0 0 40px 0;
+@media (max-width:1399px) {
+    select {
+        height: 55px;
+    }
+}
+
+@media (max-width:1199px) {
+    select {
+        height: 50px;
+    }
+}
+
+@media (max-width:991px) {
+    select {
+        height: 45px;
+    }
+}
+
+@media (max-width:767px) {
+    select {
+        height: 40px;
+    }
 }
 
 #hr {
     border: 1px solid rgb(210 210 210);
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     height: 3px;
     background-color: rgb(210 210 210);
-    margin: 30px 0 0 0px;
 }
 
-.spiski pre {
-    font-size: 20px;
+.sroki {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
     font-weight: bold;
+    font-size: 16px;
+    ;
 }
+
+.input {
+    text-align: center;
+}
+
+.list input {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgb(0 182 175);
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.1s ease;
+}
+
+.list input:hover {
+    background-image: linear-gradient(rgb(0 182 175) 0%, black);
+}
+
+.list input:active {
+    transform: scale(1.1);
+}
+
 
 /*---------------------------Немного стастики--------------------------------*/
+
 .stat {
     text-align: center;
     height: 500px;
     background: url(../img/6/фон.png) center/cover no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
 .stat h2 {
+    position: absolute;
+    top: 110px;
     font-size: 26px;
     font-weight: bold;
     color: #344051;
-    padding-top: 100px;
     text-transform: uppercase;
 }
 
 .stat hr {
+    position: absolute;
+    top: 160px;
     width: 70px;
     height: 3px;
     background-color: orange;
-    margin: 30px 0 40px 915px;
 }
 
-
-.stat li {
-    display: inline-block;
-    width: 175px;
-    margin: 60px 0 0 120px;
+.stat ul {
+    position: relative;
+    top: 260px;
 }
 
 .stat li:first-child {
@@ -646,21 +808,24 @@ select {
         opacity: 0;
         transform: scale(0.5);
     }
-
     50% {
         opacity: 0.5;
         transform: scale(2);
     }
-
     100% {
         opacity: 1;
         transform: scale(1);
     }
 }
 
+i.progres {
+    font-size: 52px;
+    color: orange;
+}
+
 .stat .cifri {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 26px;
+    font-weight: bold;
     margin: 25px 0;
 }
 
@@ -671,12 +836,13 @@ select {
     font-weight: bold;
 }
 
+
 /*---------------------------Отзывы--------------------------------*/
-/* Пока не знаю как делать скроллинг страниц по горизонтали*/
+
 .otzivi {
-    text-align: center;
+    position: relative;
     height: 600px;
-    background: url(../img/7/фотка.png) center/auto no-repeat;
+    background: url(../img/7/фотка.png) 50% 45%/auto no-repeat;
 }
 
 .otzivi h2 {
@@ -688,28 +854,36 @@ select {
     text-transform: uppercase;
 }
 
+.otzivi .hr {
+    display: flex;
+    justify-content: center;
+}
+
 .otzivi hr {
     width: 70px;
     height: 3px;
     background-color: orange;
-    margin: 30px 0 40px 915px;
 }
 
 .text_otzivi {
+    width: 50%;
+    margin-left: 25%;
+    position: relative;
+    top: 180px;
     text-align: center;
-    width: 700px;
-    margin: 200px 0 0 620px;
     color: #344051;
 }
 
-.text_otzivi p:last-child {
-    margin-top: 40px;
-    font-size: 13px;
+.otzivi .general {
+    text-align: center;
+    position: relative;
+    top: 210px;
 }
 
+
 /*---------------------------Мои контакты--------------------------------*/
+
 footer {
-    height: 1255px;
     text-align: center;
     color: #fff;
 }
@@ -717,37 +891,61 @@ footer {
 .polya {
     text-align: center;
     height: 810px;
-    background: url(../img/8/Фон.png) center/auto no-repeat;
+    background: url(../img/8/fon1.jpg) center/auto no-repeat;
 }
 
 .polya h2 {
-    font-size: 26px;
+    font-size: 33px;
     font-weight: bold;
     color: #344051;
-    padding-top: 105px;
+    padding-top: 110px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+}
+
+.polya .hr {
+    display: flex;
+    justify-content: center;
 }
 
 .polya hr {
     width: 70px;
     height: 3px;
     background-color: orange;
-    margin: 30px 0 40px 915px;
 }
 
-.polya li {
-    display: inline-block;
-    vertical-align: top;
-    margin: 44px 50px 0 50px;
+.slova {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.polya ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.polya li:nth-child(2) {
+    margin: 0 50px;
+}
+
+@media(max-width:767px) {
+    .polya li:nth-child(2) {
+        margin: 0 20px;
+    }
+}
+
+@media(max-width:580px) {
+    .polya li:nth-child(2) {
+        margin: 0 5px;
+    }
 }
 
 .polya h3 {
     text-transform: uppercase;
     margin: 39px 0 45px 0;
     font-size: 20px;
-    text-align: center;
 }
 
 footer input.name {
@@ -765,6 +963,28 @@ footer input.email {
     width: 733px;
     height: 95px;
     margin: 17px 0 30px 0;
+}
+
+@media (max-width:991px) {
+    footer input.name {
+        margin-bottom: 17px;
+        margin-right: 0;
+    }
+    .polya textarea {
+        width: 600px;
+    }
+}
+
+@media (max-width:768px) {
+    .polya textarea {
+        width: 350px;
+    }
+}
+
+@media (max-width:527px) {
+    .polya ul p {
+        font-size: 13px;
+    }
 }
 
 footer input.knopka {
@@ -786,14 +1006,6 @@ footer input.knopka:active {
     transform: scale(1.1);
 }
 
-footer .ss {
-    margin: 67px 0 0 743px
-}
-
-.ss img {
-    margin-right: 53px;
-    float: left;
-}
 
 /*---------------------------Карта--------------------------------*/
 
@@ -802,9 +1014,7 @@ footer .ss {
     background-color: #344051;
     line-height: 60px;
 }
-.dno p{
-    font-family:Arial;
-}
+
 
 /*--------------------Loader---------------*/
 
@@ -831,7 +1041,6 @@ footer .ss {
     animation: preloader-rotate 3s infinite linear;
 }
 
-
 .preloader__item {
     position: absolute;
     background-color: #337ab7;
@@ -845,11 +1054,9 @@ footer .ss {
     0% {
         transform: scale(0);
     }
-
     50% {
         transform: scale(1);
     }
-
     100% {
         transform: scale(0);
     }
@@ -902,7 +1109,6 @@ footer .ss {
         transform: rotate(360deg);
     }
 }
-
 
 .loaded_hiding .preloader {
     transition: 2s opacity;
